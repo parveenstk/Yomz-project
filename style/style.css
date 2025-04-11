@@ -114,20 +114,19 @@ body {
 }
 
 .topbaar {
-  background: #bbb2ff;
+  background: #ff073a;
   padding: 6px 0;
 }
 
 .topbaar p {
   margin-bottom: 0px;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 14px;
 }
 
 .join-span {
-  background: #000;
-  color: #fff;
+  background: #fff700;
+  color: #000;
   border-radius: 30px;
   padding: 0px 10px;
   display: inline-block;
@@ -178,7 +177,7 @@ header .nav li a {
 
 /*header*/
 
-
+/*banner*/
 .smalgp {
   padding-left: 310px;
 }
@@ -195,7 +194,6 @@ header .nav li a {
 .sec-content h1 {
   font-size: 42px;
   font-weight: 800;
-  text-transform: uppercase;
   margin: 20px 0;
   line-height: 40px;
 }
@@ -209,7 +207,7 @@ header .nav li a {
 }
 
 .left-heading {
-  margin-left: -33px;
+  margin-left: -41px;
 }
 
 .sec-content span {
@@ -287,6 +285,33 @@ header .nav li a {
   border: 1px solid rgb(17 17 17 / 10%);
 }
 
+
+.yomz-btn .btn {
+  margin-top: 20px !important;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 10px 35px;
+  display: inline-block;
+  text-transform: none;
+  color: #fff700 !important;
+  white-space: nowrap;
+  background: #ff073a;
+  color: var(--button-text-color);
+  border-radius: 40px;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgb(17 17 17 / 10%);
+}
+
+.yomz-btn .btn:hover {
+  background: #fff700;
+  color: #ff073a !important;
+  border: 1px solid #fff700;
+}
+
+/*.yomz-btn .fa{font-size: 28px;}*/
+
 .button-wrapper-button a {
   text-decoration: none;
   color: #000;
@@ -306,7 +331,7 @@ header .nav li a {
   font-size: 14px !important;
   align-items: center;
   border-radius: 16px;
-  background: #FFDD6880;
+  background: #fff700;
   padding: 20px;
 }
 
@@ -315,7 +340,16 @@ header .nav li a {
   margin-top: 10px;
 }
 
+.smsize {
+  font-size: 21px;
+  line-height: normal;
+}
 
+.smsize span {
+  margin-bottom: -10px;
+}
+
+/*Banner*/
 
 /*marquee*/
 
@@ -332,6 +366,10 @@ header .nav li a {
   align-items: center;
   width: 100%;
   display: flex;
+}
+
+.marquee_track img {
+  width: 32px;
 }
 
 .marquee_track.damn {
@@ -424,6 +462,11 @@ header .nav li a {
 
 /*modern*/
 
+.list-alicenter {
+  display: inline-block;
+  text-align: left;
+}
+
 .modern {
   padding: 80px 0 130px;
 }
@@ -453,6 +496,8 @@ header .nav li a {
   text-transform: uppercase;
   width: auto;
   margin-bottom: 10px;
+  background: #ff073a !important;
+  color: #fff700;
 }
 
 .section_heading h2 {
@@ -525,7 +570,7 @@ header .nav li a {
 
 
 
-.video-right-date .left {
+.video-right-date .left span {
   border: 2px solid #ffca12;
   border-radius: 8px;
   font-size: 28px;
@@ -544,17 +589,15 @@ header .nav li a {
 }
 
 .video-right-content h3 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
 .video-right-date .right h4 {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 0px;
-  text-transform: uppercase;
 }
 
 .video-right-date .right p {
@@ -567,6 +610,11 @@ header .nav li a {
   font-size: 11px;
   font-weight: 800;
   margin-top: 50px;
+}
+
+
+.video-right-date .left img {
+  width: 40px;
 }
 
 /*modern*/
@@ -591,7 +639,7 @@ header .nav li a {
 }
 
 .frink-srction {
-  background: #ffca12;
+  background: #fff700;
   margin-top: -30px;
   padding: 60px 0 180px;
 }
@@ -952,7 +1000,7 @@ header .nav li a {
 
 
 .products {
-  background: #ece8ff;
+  background: #ffd5dd;
   margin-top: -13px;
 }
 
@@ -987,6 +1035,10 @@ header .nav li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.products-thumbs .yomz-btn .btn {
+  display: block;
 }
 
 .featured-product-list-card-prices {
@@ -1296,7 +1348,7 @@ header .nav li a {
 /*subscribe*/
 
 .subscribe {
-  background: #ece8ff;
+  background: #fff1bf;
   padding: 50px 0;
 }
 
@@ -1506,8 +1558,8 @@ footer .subscribe-form button {
 }
 
 .subtitle-Text {
-  background: #ffca12;
-  color: #000;
+  background: #ff073a;
+  color: #fff700;
   font-weight: 800;
   font-size: 12px;
   font-weight: 800;
@@ -1590,8 +1642,8 @@ footer .subscribe-form button {
 }
 
 .subtitle-Text {
-  background: #ffca12;
-  color: #000;
+  background: #ff073a;
+  color: #fff700;
   font-weight: 800;
   font-size: 12px;
   font-weight: 800;
@@ -1622,15 +1674,10 @@ footer .subscribe-form button {
   text-transform: none;
   width: auto;
   margin-bottom: 10px;
+
 }
 
 /*New-code*/
-
-
-
-
-
-
 @media screen and (max-width:1797px) {
 
   .smalgp {
@@ -1675,4 +1722,20 @@ footer .subscribe-form button {
     padding: 50px 30px 50px 0px;
   }
 
+}
+
+@media screen and (max-width:767px) {
+
+  .banner-content {
+    padding: 20px 10px 20px 10px !important;
+    text-align: center;
+  }
+
+  .left-heading {
+    margin-left: 0px;
+  }
+
+  .reviews-thumb {
+    margin-bottom: 20px;
+  }
 }
