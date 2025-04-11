@@ -113,15 +113,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.topbaar {
+.topbar {
   background: #bbb2ff;
   padding: 6px 0;
 }
 
-.topbaar p {
+.topbar p {  
+  padding: 6px 0;
   margin-bottom: 0px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 14px;
 }
 
