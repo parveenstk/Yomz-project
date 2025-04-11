@@ -125,8 +125,6 @@ body {
   font-size: 14px;
 }
 
-<<<<<<< Updated upstream
-=======
 .tryYomzBtn {
   background-color: #ff073a !important;
   color: #fff700 !important;
@@ -295,9 +293,18 @@ body {
   margin-bottom: 10px;
 }
 
-.topbaar{background: #bbb2ff;     padding: 6px 0;}
-.topbaar p{margin-bottom: 0px; font-weight: 700; text-transform: uppercase; font-size: 14px;}
->>>>>>> Stashed changes
+.topbaar {
+  background: #bbb2ff;
+  padding: 6px 0;
+}
+
+.topbaar p {
+  margin-bottom: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 .join-span {
   background: #000;
   color: #fff;
@@ -863,8 +870,6 @@ header .nav li a {
 }
 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 .anytime-data .slt {
   font-size: 12px;
   font-weight: 800;
@@ -885,11 +890,11 @@ header .nav li a {
 .anytime-data p {
   font-weight: 700;
 }
-=======
-=======
->>>>>>> Stashed changes
-.anytime-data p{font-weight: 700;}
->>>>>>> Stashed changes
+
+.anytime-data p {
+  font-weight: 700;
+}
+
 
 
 .anytime-data .div-1 {
@@ -1052,7 +1057,6 @@ header .nav li a {
 /*effect*/
 
 .effect {
-<<<<<<< Updated upstream
   background: #fff;
 }
 
@@ -1064,16 +1068,20 @@ header .nav li a {
   padding-top: 80px;
   padding-bottom: 160px;
 }
-=======
-    background: #fff url(../images/boitl2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0 80px;
+
+background: #fff url(../images/boitl2.svg);
+
+  {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 0 80px;
 }
 
-.effect .div-1{    border: 2px solid #bbb2ff;}
->>>>>>> Stashed changes
+
+.effect .div-1 {
+  border: 2px solid #bbb2ff;
+}
 
 .effect .anytime-data .slt {
   background: #bbb2ff;
