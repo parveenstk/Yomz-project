@@ -1622,54 +1622,57 @@ footer .subscribe-form button {
   text-transform: none;
   width: auto;
   margin-bottom: 10px;
-  /*New-code*/
+}
+
+/*New-code*/
 
 
 
 
 
 
-  @media screen and (max-width:1797px) {
+@media screen and (max-width:1797px) {
 
-    .smalgp {
-      padding-left: 250px;
-    }
-
+  .smalgp {
+    padding-left: 250px;
   }
 
+}
 
-  @media screen and (max-width:1681px) {
 
-    .smalgp {
-      padding-left: 200px;
-    }
+@media screen and (max-width:1681px) {
 
+  .smalgp {
+    padding-left: 200px;
   }
 
+}
 
-  @media screen and (max-width:1593px) {
 
-    .smalgp {
-      padding-left: 150px;
-    }
+@media screen and (max-width:1593px) {
 
+  .smalgp {
+    padding-left: 150px;
   }
 
-  @media screen and (max-width:1502px) {
+}
 
-    .smalgp {
-      padding-left: 100px;
-    }
+@media screen and (max-width:1502px) {
 
+  .smalgp {
+    padding-left: 100px;
   }
 
-  @media screen and (max-width:1386px) {
+}
 
-    .smalgp {
-      padding-left: 100px;
-    }
+@media screen and (max-width:1386px) {
 
-    .banner-content {
-      padding: 50px 30px 50px 0px;
-    }
+  .smalgp {
+    padding-left: 100px;
   }
+
+  .banner-content {
+    padding: 50px 30px 50px 0px;
+  }
+
+}
