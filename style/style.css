@@ -111,18 +111,8 @@
 
 body{ font-family: "Poppins", sans-serif;}
 
-.topbaar {
-  background: #bbb2ff;
-  padding: 6px 0;
-}
-
-.topbaar p {
-  margin-bottom: 0px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
+.topbaar{background: #ff073a;     padding: 6px 0;}
+.topbaar p{margin-bottom: 0px; font-weight: 700; font-size: 14px;}
 .join-span {
     background: #fff700;
     color: #000;
