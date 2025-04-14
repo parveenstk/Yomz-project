@@ -601,6 +601,7 @@ header .nav li a {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .video-right-date .right h4 {
