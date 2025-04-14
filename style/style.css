@@ -245,10 +245,8 @@ header .nav li a {
     padding: 0;
     width: 100%;
     flex-direction: row;
-}
-
-.featured-image-with-text__text ul {
     list-style: none;
+
 }
 
 .featured-image-with-text__text ul li {
@@ -1734,9 +1732,6 @@ footer .subscribe-form button {
 }
 
 @media screen and (max-width:767px) {
-
-
-
     .products .col-md-4 {
         flex: 0 0 auto;
         width: 100%;
