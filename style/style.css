@@ -113,6 +113,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.font400 {
+    font-weight: 400 !important;
+}
+
 .topbaar {
     background: #ff073a;
     padding: 6px 0;
