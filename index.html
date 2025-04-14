@@ -118,7 +118,6 @@
                                  fill="black" stroke="black" stroke-width="2"></path>
                            </svg>
                            <i>Nomz. Nomz. Nomz.</i>
-                          Nomz. Nomz. Nomz.
                            <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1681,25 +1680,7 @@
 
 
 
-   <script>
-      const video = document.getElementById('myVideo');
-      const playPauseIcon = document.getElementById('playPauseIcon');
-
-      function togglePlayPause() {
-         if (video.paused) {
-            video.play();
-            playPauseIcon.src = 'images/pluse.png'; // Assuming this is the "pause" icon
-         } else {
-            video.pause();
-            playPauseIcon.src = 'images/play.png';
-         }
-      }
-
-      // Reset to play icon when video ends
-      video.addEventListener('ended', () => {
-         playPauseIcon.src = 'images/play.png';
-      });
-   </script>
+   
 </body>
 
 </html>
