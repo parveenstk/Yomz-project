@@ -389,10 +389,7 @@ header .nav li a {
 
 
 
-
 /*modern*/
-
-.modern-data p{margin-bottom: 10px}
 
     .list-alicenter {
         display: inline-block;
@@ -539,9 +536,6 @@ header .nav li a {
 /*modern*/
 
 
-
-
-
 /**/
 .top-wavs{height: 3vw;
     position: relative;
@@ -584,20 +578,9 @@ header .nav li a {
 
 .div-1{text-align: center;}
 
-.list-drinks-details{gap: 20px;}
-
-.list-drinks-details img{width: 100%;}
+.list-drinks-details{gap: 70px;}
 
 .list-drinks-details{margin-top: 20px;}
-
-.list-drinks-details img {
-    width: 80px;
-    border: 1px solid #000;
-    border-radius: 80px;
-    padding: 9px;
-}
-
-
 /**/
 
 
@@ -787,20 +770,6 @@ background:#fff1bf url(../images/boitl.svg);
     width: 19.666667%;
 }
 /**/
-
-
-
-/*Doctor-Approved Goodness*/
-
-.doctor-approved{padding: 80px 0px;}
-
-.doctor-approved .testi-qot h3{font-size: 22px;}
-.doctor-approved .testi-qot .fa-quote-left{ font-size:38px; }
-
-.testi-qot{margin-top: 00px;}
-/*Doctor-Approved Goodness*/
-
-
 
 
 /**/
