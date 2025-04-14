@@ -1780,7 +1780,10 @@ footer .subscribe-form button {
 
 @media screen and (max-width:767px) {
 
-
+    .qualities-Img {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .products .col-md-4 {
         flex: 0 0 auto;
