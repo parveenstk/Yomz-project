@@ -1829,7 +1829,7 @@ footer .subscribe-form button {
     }
 
     .banner-content {
-        padding: 20px 10px 20px 10px !important;
+        padding: 20px 0px 20px 0px !important;
         text-align: center;
     }
 
@@ -1878,4 +1878,18 @@ footer .subscribe-form button {
         padding: 40px 0;
     }
 
+    .featured-image-with-text__text ul{
+            display: inline-block;
+                width: auto;
+    }
+
+.featured-image-with-text__text--caption.has-rating{
+        display: flex;
+            justify-content: center;
+}
+
+.yomz-btn .btn{    width: 100%;}
+.doctor-approved {
+    padding: 40px 0px 90px;
+}
 }
