@@ -56,6 +56,11 @@ ul {
     font-style: normal;
 }
 
+.upColor {
+    color: #fff700 !important;
+    background: #ff073a !important;
+}
+
 .topbaar {
     background: #FF073A;
     padding: 6px 0;
@@ -430,6 +435,10 @@ header .nav li a {
     margin: 0 auto 40px;
 }
 
+.section_heading1 {
+    margin: 0 auto 20px !important;
+}
+
 .subtitle {
     font-size: 12px;
     font-weight: 800;
@@ -528,11 +537,10 @@ header .nav li a {
 }
 
 .video-right-content {
-    padding: 50px 0px 0px;
+    padding: 0px 0px 0px;
 }
 
 .video-right-content h3 {
-
     font-size: 32px;
     margin-bottom: 40px;
     text-align: center;
@@ -1297,14 +1305,14 @@ header .nav li a {
 }
 
 .subscribe-form button {
-    background: #000 !important;
+    background: #000;
     border-radius: 36px !important;
     padding: 0 !important;
     width: 100% !important;
     font-size: 18px !important;
     font-weight: 700 !important;
     font-family: var(--font-subheading-family) !important;
-    color: #fff !important;
+    color: #fff;
     line-height: 38px !important;
     height: 38px !important;
     border: 0 !important;
@@ -1423,19 +1431,6 @@ footer .subscribe-form button {
 .tryYomzBtn {
     background-color: #ff073a !important;
     color: #fff700 !important;
-}
-
-.yomzBtn {
-    background-color: #ff073a !important;
-    color: #fff700 !important;
-    font-size: 24px !important;
-    font-weight: 800;
-    border-radius: 34px;
-    padding: 10px 30px;
-    display: inline-block;
-    margin: auto;
-    width: auto;
-    text-transform: none;
 }
 
 .ul-center {
@@ -1719,10 +1714,6 @@ footer .subscribe-form button {
     .sec-content h1 svg {
         margin-top: -35px;
         width: 18px;
-    }
-
-    .video-right-content {
-        padding: 0px 0px 0px;
     }
 
     .video-right-date .left span {
