@@ -1,130 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
+@font-face {
+    font-family: 'super_boysregular';
+    src: url('../font/super_boys-webfont.woff2') format('woff2'),
+        url('../font/super_boys-webfont.woff') format('woff'),
+        url('../font/super_boys-webfont.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
+@font-face {
+    font-family: 'century_gothicregular';
+    src: url('../font/centurygothic-webfont.eot');
+    src: url('../font/centurygothic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/centurygothic-webfont.woff2') format('woff2'),
+        url('../font/centurygothic-webfont.woff') format('woff'),
+        url('../font/centurygothic-webfont.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
+
 }
 
-.poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+@font-face {
+    font-family: 'century_gothicbold';
+    src: url('../font/centurygothic_bold-webfont.eot');
+    src: url('../font/centurygothic_bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/centurygothic_bold-webfont.woff2') format('woff2'),
+        url('../font/centurygothic_bold-webfont.woff') format('woff'),
+        url('../font/centurygothic_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
+
 }
 
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h1,
+h2 {
+    font-family: 'super_boysregular';
 }
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'century_gothicregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
 }
 
-.font400 {
-    font-weight: 400 !important;
+p {
+    font-family: 'century_gothicregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+
+ul {
+    font-family: 'century_gothicregular';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .topbaar {
-    background: #ff073a;
+    background: #FF073A;
     padding: 6px 0;
 }
 
 .topbaar p {
     margin-bottom: 0px;
-    font-weight: 700;
     font-size: 14px;
 }
 
@@ -144,25 +82,30 @@ body {
     max-width: 150px;
 }
 
-
 /*header*/
+
+header {
+    background: #00e7ff;
+}
+
 header .nav li a {
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 17px;
+    font-size: 22px;
+    font-family: 'super_boysregular';
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
     transition: left 0.3s ease;
-    z-index: 1050;
+    z-index: 999;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .sidebar.show {
@@ -182,6 +125,11 @@ header .nav li a {
 /*header*/
 
 /*banner*/
+
+.featured-image-with-text__text--caption-review-star img {
+    max-width: 101px !important;
+}
+
 .smalgp {
     padding-left: 310px;
 }
@@ -191,36 +139,33 @@ header .nav li a {
     padding-bottom: 50px;
 }
 
-.banner-content {
-    padding: 50px 120px 50px 0px;
-}
-
 .sec-content h1 {
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 52px;
     margin: 20px 0;
     line-height: 40px;
+    font-family: 'super_boysregular';
 }
 
-.sec-content p {
-    font-weight: 400;
+.yomz-heading {
+    font-size: 52px;
+    margin-top: 30px;
+    line-height: 40px;
+    font-family: 'super_boysregular';
+}
+
+.yn-blod-big b {
+    font-size: 20px;
+    font-weight: 900;
+    padding-right: 1px;
 }
 
 .sec-content h1 svg {
     margin-top: -35px;
 }
 
-.left-heading {
-    margin-left: -41px;
-}
-
 .sec-content span {
     display: block;
 }
-
-
-
-
 
 .featured-image-with-text__text--caption.has-rating {
     display: flex;
@@ -255,7 +200,6 @@ header .nav li a {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 700;
 }
 
 .featured-image-with-text__text ul li:before {
@@ -273,7 +217,7 @@ header .nav li a {
 .button-wrapper-button {
     margin-top: 20px !important;
     font-size: 20px;
-    font-weight: 700;
+
     letter-spacing: 0;
     padding: 10px 35px;
     display: inline-block;
@@ -289,23 +233,21 @@ header .nav li a {
     border: 1px solid rgb(17 17 17 / 10%);
 }
 
-
 .yomz-btn .btn {
     margin-top: 20px !important;
     font-size: 20px;
-    font-weight: 700;
+
     letter-spacing: 0;
     padding: 10px 35px;
     display: inline-block;
     text-transform: none;
     color: #fff700 !important;
-    white-space: nowrap;
     background: #ff073a;
-    color: var(--button-text-color);
     border-radius: 40px;
     align-items: center;
     position: relative;
     border: 1px solid rgb(17 17 17 / 10%);
+    font-family: 'century_gothicbold';
 }
 
 .yomz-btn .btn:hover {
@@ -323,8 +265,6 @@ header .nav li a {
     gap: 8px;
 }
 
-
-
 .reviews-thumb img {
     border-radius: 50px;
     max-width: 40px;
@@ -337,6 +277,7 @@ header .nav li a {
     border-radius: 16px;
     background: #fff700;
     padding: 20px;
+    height: 230px;
 }
 
 .reviews-thumb p {
@@ -345,18 +286,19 @@ header .nav li a {
 }
 
 .smsize {
-    font-size: 21px;
+    font-size: 26px;
     line-height: normal;
+    font-family: 'century_gothicregular';
+    font-weight: 600;
 }
 
-.smsize span {
-    margin-bottom: -10px;
+.list-done.featured-image-with-text__text li {
+    font-weight: 800;
 }
 
 /*Banner*/
 
 /*marquee*/
-
 
 .marquee_section {
     background: #000;
@@ -391,7 +333,8 @@ header .nav li a {
 .marquee h3 {
     margin: 0;
     font-size: 18px;
-    font-weight: 700;
+
+    font-weight: 800;
     color: #fff;
 }
 
@@ -421,8 +364,8 @@ header .nav li a {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     text-decoration: none;
     display: flex;
 }
@@ -462,9 +405,6 @@ header .nav li a {
 
 /*marquee*/
 
-
-
-
 /*modern*/
 
 .modern-data p {
@@ -477,7 +417,7 @@ header .nav li a {
 }
 
 .modern {
-    padding: 80px 0 130px;
+    padding: 50px 0 130px;
 }
 
 .section_heading {
@@ -512,12 +452,12 @@ header .nav li a {
 .section_heading h2 {
     margin: auto;
     text-align: center;
-    font-size: 44px;
+    font-size: 57px;
     font-weight: 400;
-    letter-spacing: -1px;
     line-height: 110%;
-    text-transform: uppercase;
-    font-weight: 700;
+    text-transform: uppercase !important;
+    font-family: 'super_boysregular';
+    margin-top: 10px;
 }
 
 .underline,
@@ -541,20 +481,16 @@ header .nav li a {
 
 .section_heading .text p {
     margin: 0;
-    font-size: 14px;
     text-align: center;
     letter-spacing: .1px;
-    font-weight: 600;
     margin-top: 15px;
 }
-
 
 .modern .controls button {
     border: none;
     background: none;
     padding: 0px;
 }
-
 
 .modern .controls {
     position: absolute;
@@ -577,13 +513,11 @@ header .nav li a {
     position: relative;
 }
 
-
-
 .video-right-date .left span {
     border: 2px solid #ffca12;
     border-radius: 8px;
     font-size: 28px;
-    font-weight: 700;
+
     letter-spacing: -2px;
     line-height: 1;
     color: #000;
@@ -594,44 +528,31 @@ header .nav li a {
 }
 
 .video-right-content {
-    padding: 50px 40px;
+    padding: 50px 0px 0px;
 }
 
 .video-right-content h3 {
-    font-weight: 700;
+
     font-size: 32px;
     margin-bottom: 40px;
     text-align: center;
 }
 
 .video-right-date .right h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 0px;
+    font-size: 24px;
+
+    margin-bottom: 10px;
 }
 
 .video-right-date .right p {
-    font-size: 14px;
-    font-weight: 600;
     margin-bottom: 0px;
 }
-
-.pragep-pro {
-    font-size: 11px;
-    font-weight: 800;
-    margin-top: 50px;
-}
-
 
 .video-right-date .left img {
     width: 40px;
 }
 
 /*modern*/
-
-
-
-
 
 /**/
 .top-wavs {
@@ -661,7 +582,6 @@ header .nav li a {
     text-align: center;
 }
 
-
 .underline-black:before {
     content: "";
     display: block;
@@ -684,18 +604,15 @@ header .nav li a {
     margin-bottom: 0px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 800;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 17px;
     line-height: 1;
-    margin-top: 10px
-}
-
-.div-1 {
-    text-align: center;
+    margin-top: 10px;
+    line-height: normal;
 }
 
 .list-drinks-details {
-    gap: 20px;
+    gap: 1px;
 }
 
 .list-drinks-details img {
@@ -713,23 +630,21 @@ header .nav li a {
     padding: 9px;
 }
 
+.list-drinks-details .div-1 {
+    text-align: center;
+    width: 14%;
+}
 
 /**/
-
-
 
 /**/
 
 .featured-product-detail__heading {
-    font-size: 44px;
-    text-transform: uppercase;
-    line-height: 1;
+
     color: #000;
     position: relative;
     z-index: 1;
     word-break: keep-all;
-    letter-spacing: -2px;
-    font-weight: 800;
 }
 
 .featured-product-detail__heading .icon-whisker_text {
@@ -762,7 +677,6 @@ header .nav li a {
     padding-bottom: 160px;
 }
 
-
 .anytime-data .slt {
     font-size: 12px;
     font-weight: 800;
@@ -780,10 +694,9 @@ header .nav li a {
     margin-bottom: 10px;
 }
 
-.anytime-data p {
-    font-weight: 700;
+.cabdy-text {
+    text-align: left !important;
 }
-
 
 .anytime-data .div-1 {
     border: 2px solid #ffca12;
@@ -814,7 +727,7 @@ header .nav li a {
 
 .everyday .titles p {
     font-size: 16px;
-    font-weight: 700;
+
     margin-bottom: 0px;
     font-size: 13px;
 }
@@ -829,7 +742,7 @@ header .nav li a {
     gap: 10px;
     font-family: var(--font-subheading-family);
     font-size: 16px;
-    font-weight: 700;
+
     line-height: 1;
     text-transform: uppercase;
 }
@@ -869,9 +782,7 @@ header .nav li a {
 
 /**/
 
-
 /*Video*/
-
 
 .video-section {
     padding: 80px 0;
@@ -907,13 +818,11 @@ header .nav li a {
     background-image: url(../images/Star_Right.svg);
 }
 
-
 .video-sec-ga .controls button {
     border: none;
     background: none;
     padding: 0px;
 }
-
 
 .video-sec-ga .controls {
     position: absolute;
@@ -938,8 +847,6 @@ header .nav li a {
 
 /**/
 
-
-
 /*Doctor-Approved Goodness*/
 
 .doctor-approved {
@@ -960,11 +867,7 @@ header .nav li a {
 
 /*Doctor-Approved Goodness*/
 
-
-
-
 /**/
-
 
 /*effect*/
 
@@ -977,7 +880,7 @@ header .nav li a {
     background-size: contain;
     background-position: center;
 
-    padding: 80px 20px 80px;
+    padding: 0px;
 }
 
 .effect .anytime-data .slt {
@@ -994,8 +897,6 @@ header .nav li a {
 
 /*effect*/
 
-
-
 /**/
 
 .super-kis {
@@ -1007,7 +908,7 @@ header .nav li a {
     color: #000;
     position: absolute;
     font-size: 14px;
-    font-weight: 700;
+
     line-height: 1;
     padding: 6px 0;
     left: 16px;
@@ -1041,11 +942,7 @@ header .nav li a {
 
 /**/
 
-
-
-
 /*products*/
-
 
 .products {
     background: #ffd5dd;
@@ -1065,11 +962,9 @@ header .nav li a {
     background-image: url(../images/Underline-blue.svg);
 }
 
-
 .products .subtitle {
     background: #bbb2ff;
 }
-
 
 .products-thumbs {
     padding: 20px;
@@ -1100,14 +995,14 @@ header .nav li a {
 
 .featured-product-list-card-prices .regular-price {
     font-size: 24px;
-    font-weight: 700;
+
     color: #000;
     line-height: 1.1;
 }
 
 .featured-product-list-card-info .unit {
     font-size: 12px;
-    font-weight: 700;
+
     color: #000;
     line-height: 1.1;
 }
@@ -1121,7 +1016,7 @@ header .nav li a {
 
 .featured-product-list-card-prices .compare-price {
     font-size: 18px;
-    font-weight: 700;
+
     line-height: 1.1;
     color: #666;
     position: relative;
@@ -1129,7 +1024,7 @@ header .nav li a {
 
 .featured-product-list-card-header .subtext {
     font-size: 13px;
-    font-weight: 700;
+
     line-height: 1.1;
     color: #000;
     text-transform: uppercase;
@@ -1139,15 +1034,12 @@ header .nav li a {
     margin: 0;
 }
 
-
-
 .featured-product-list-card-meta h4 {
     font-size: 16px;
     font-weight: 800;
     letter-spacing: 0;
     color: #000;
 }
-
 
 .under_buttons {
     display: flex;
@@ -1171,7 +1063,6 @@ header .nav li a {
     white-space: nowrap;
 }
 
-
 .featured-product-list-card .under_buttons span:before {
     background-color: #ffca12;
 }
@@ -1191,7 +1082,6 @@ header .nav li a {
     margin-top: 0;
 }
 
-
 .products .button-wrapper-button {
     align-items: center;
     display: block;
@@ -1204,9 +1094,8 @@ header .nav li a {
 
 }
 
-
 .plo .under_buttons span:before {
-    background-color: #bbb2ff !important;
+    background-color: #ffca12 !important;
 }
 
 .gruntr-icons {
@@ -1229,9 +1118,7 @@ header .nav li a {
 
 /*products*/
 
-
 /*long-banner*/
-
 
 .long-banner {
     margin-top: -41px;
@@ -1243,8 +1130,6 @@ header .nav li a {
 
 /*long-banner*/
 
-
-
 /*fueling*/
 
 .fueling {
@@ -1253,7 +1138,7 @@ header .nav li a {
 
 .featured-compare-benefits_item-title {
     font-size: 16px;
-    font-weight: 700;
+
     line-height: 1.1;
     color: #000;
     margin: 10px 0 15px;
@@ -1265,12 +1150,10 @@ header .nav li a {
 
 .featured-compare-benefits_item-text p {
     font-size: 13px;
-    font-weight: 700;
+
 }
 
 /*fueling*/
-
-
 
 /*Reviews*/
 
@@ -1308,7 +1191,6 @@ header .nav li a {
     background-image: url(../images/Smile.svg);
 }
 
-
 .icons-star {
     width: 120px;
 }
@@ -1335,7 +1217,6 @@ header .nav li a {
 }
 
 .featured-review-columns-card__text * {
-    font-size: 14px;
     font-weight: 600;
     line-height: 1.2;
     color: #000;
@@ -1359,14 +1240,12 @@ header .nav li a {
     display: flex;
 }
 
-
 .author-image img {
     width: 36px;
     height: 36px;
     border-radius: 100%;
     object-fit: cover;
 }
-
 
 .featured-review-columns-card h3.author-title {
     font-size: 16px;
@@ -1388,15 +1267,12 @@ header .nav li a {
     object-fit: contain;
 }
 
-
 /*Reviews*/
-
-
 
 /*subscribe*/
 
 .subscribe {
-    background: #fff1bf;
+    background: #fff700;
     padding: 50px 0;
 }
 
@@ -1406,7 +1282,7 @@ header .nav li a {
 
 .subscribe-form p {
     font-size: 13px;
-    font-weight: 700;
+
 }
 
 .subscribe-form input[type="email"] {
@@ -1439,11 +1315,7 @@ header .nav li a {
 
 /*subscribe*/
 
-
-
-
 /*Fotoer*/
-
 
 footer {
     padding-top: 80px;
@@ -1453,7 +1325,6 @@ footer {
 
 .footer-block__heading {
     font-size: 16px;
-    font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -1477,8 +1348,6 @@ footer {
     list-style: none;
 }
 
-
-
 .footer-block__details-content>li:not(:last-child) {
     margin-bottom: 12px;
 }
@@ -1498,7 +1367,6 @@ footer {
 .footer__copyright {
     color: #ffffffb3;
 }
-
 
 footer .subscribe-form input[type="email"] {
     border: 2px solid #464545 !important;
@@ -1551,26 +1419,10 @@ footer .subscribe-form button {
 
 /*Footer*/
 
-
-
-
-
 /*New-Code*/
 .tryYomzBtn {
     background-color: #ff073a !important;
     color: #fff700 !important;
-}
-
-.section_heading {
-    .whtveggie {
-        font-size: 36px !important;
-        margin-top: 15px !important;
-        text-transform: none;
-    }
-
-    .realText {
-        text-transform: none;
-    }
 }
 
 .yomzBtn {
@@ -1590,7 +1442,7 @@ footer .subscribe-form button {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-weight: 700;
+
 }
 
 .title-h1 {
@@ -1599,10 +1451,10 @@ footer .subscribe-form button {
 }
 
 .drinks-text {
-    margin-top: 20px;
-    font-size: 14px;
+
     text-align: center;
-    font-weight: 500;
+    margin-top: 20px;
+
 }
 
 .subtitle-Text {
@@ -1618,11 +1470,10 @@ footer .subscribe-form button {
     margin: auto;
     width: auto;
     margin-bottom: 15px;
-    text-transform: none;
+
 }
 
 .candyWith-Text h2 {
-    text-transform: none;
     line-height: 50px !important;
 }
 
@@ -1647,8 +1498,7 @@ footer .subscribe-form button {
 
 .section_heading {
     .whtveggie {
-        font-size: 36px !important;
-        margin-top: 15px !important;
+
         text-transform: none;
     }
 
@@ -1674,19 +1524,11 @@ footer .subscribe-form button {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-weight: 700;
 }
 
 .title-h1 {
     margin-top: 15px !important;
     text-transform: none !important;
-}
-
-.drinks-text {
-    margin-top: 20px;
-    font-size: 14px;
-    text-align: center;
-    font-weight: 500;
 }
 
 .subtitle-Text {
@@ -1706,7 +1548,6 @@ footer .subscribe-form button {
 }
 
 .candyWith-Text h2 {
-    text-transform: none;
     line-height: 50px !important;
 }
 
@@ -1727,58 +1568,69 @@ footer .subscribe-form button {
 
 /*New-code*/
 
+@media screen and (max-width:991px) {
 
-
-
-
-
-@media screen and (max-width:1797px) {
-
-    .smalgp {
-        padding-left: 250px;
+    .container {
+        max-width: 98%;
     }
 
-}
-
-
-@media screen and (max-width:1681px) {
-
-    .smalgp {
-        padding-left: 200px;
+    .logo-img {
+        max-width: 110px;
     }
 
-}
-
-
-@media screen and (max-width:1593px) {
-
-    .smalgp {
-        padding-left: 150px;
+    button#menu-toggle img {
+        max-width: 28px;
     }
 
-}
-
-@media screen and (max-width:1502px) {
-
-    .smalgp {
-        padding-left: 100px;
+    #mobile-sidebar .nav li a {
+        color: #000 !important;
+        padding-left: 0px;
     }
 
-}
-
-@media screen and (max-width:1386px) {
-
-    .smalgp {
-        padding-left: 100px;
+    #mobile-sidebar .social-icons img {
+        filter: brightness(50) invert(1);
     }
 
-    .banner-content {
-        padding: 50px 30px 50px 0px;
+    #mobile-sidebar .social-icons {
+        text-align: left;
+    }
+
+    #mobile-sidebar .social-icons ul {
+        padding: 0px;
+        margin-top: 20px;
     }
 
 }
 
 @media screen and (max-width:767px) {
+
+    /*Header*/
+    .join-span {
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .topbaar {
+        padding: 0px 0;
+    }
+
+    .hd-head {
+        padding: 0px 0px !important;
+    }
+
+    .logo-md-spce {
+        margin-bottom: 0px !important;
+    }
+
+    /*Header*/
+
+    .brbrack {
+        display: block;
+    }
+
+    .mobile-dblock {
+        display: block;
+    }
 
     .qualities-Img {
         display: flex;
@@ -1814,18 +1666,20 @@ footer .subscribe-form button {
 
     .section_heading h2 {
         font-size: 34px;
+        font-size: calc(27px + 1.3vw) !important;
+        margin-bottom: 20px;
     }
 
     .anytime.effect img {
         display: none;
     }
 
-    #menu-toggle {
-        display: none;
+    .yomz-btn .btn {
+        font-size: 18px;
     }
 
-    #mobile-sidebar {
-        display: none;
+    .drinks-text {
+        font-size: 10px !important;
     }
 
     .banner-content {
@@ -1833,16 +1687,33 @@ footer .subscribe-form button {
         text-align: center;
     }
 
-    .left-heading {
-        margin-left: 0px;
-    }
-
     .reviews-thumb {
         margin-bottom: 20px;
     }
 
     .sec-content h1 {
-        font-size: 28px;
+        font-size: calc(35px + 1.3vw) !important;
+        margin: 5px 0px;
+    }
+
+    .smsize {
+        font-size: calc(14px + 1.3vw) !important;
+    }
+
+    p {
+        font-size: calc(12px + 1vw) !important;
+    }
+
+    li {
+        font-size: calc(12px + 1vw) !important;
+    }
+
+    .list-done.featured-image-with-text__text li {
+        font-size: calc(12px + 1vw) !important;
+    }
+
+    .reviews-thumb {
+        height: auto;
     }
 
     .sec-content h1 svg {
@@ -1851,7 +1722,7 @@ footer .subscribe-form button {
     }
 
     .video-right-content {
-        padding: 20px 10px;
+        padding: 0px 0px 0px;
     }
 
     .video-right-date .left span {
@@ -1863,7 +1734,7 @@ footer .subscribe-form button {
     }
 
     .pragep-pro {
-        font-size: 7px;
+        font-size: 8px !important;
         font-weight: 800;
         margin-top: 0px;
     }
@@ -1871,25 +1742,315 @@ footer .subscribe-form button {
     .frink-srction {
         background: #fff700;
         margin-top: -30px;
-        padding: 40px 0 60px;
+        padding: 20px 0 20px;
     }
 
     .video-section {
         padding: 40px 0;
     }
 
-    .featured-image-with-text__text ul{
-            display: inline-block;
-                width: auto;
+    .featured-image-with-text__text ul {
+        display: inline-block;
+        width: auto;
     }
 
-.featured-image-with-text__text--caption.has-rating{
+    .featured-image-with-text__text--caption.has-rating {
         display: flex;
-            justify-content: center;
+        justify-content: center;
+        font-size: calc(10px + 1.3vw) !important;
+    }
+
+    .yomz-btn .btn {
+        width: 100%;
+    }
+
+    .doctor-approved {
+        padding: 40px 0px 40px;
+    }
+
+    .doctor-approved .section_heading {
+        margin: 0 auto 0px;
+    }
+
+    .products .section_heading {
+        margin: 0 auto 20px;
+    }
+
+    /*Footer*/
+    .subscribe {
+        background: #fff700;
+        padding: 20px 0 0px;
+    }
+
+    .subscribe-form p {
+        margin-bottom: 0px !important;
+    }
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 22px;
+        background: #000;
+    }
+
+    .footer-block__details-content>li {
+        margin-bottom: 0px !important;
+    }
+
+    .company-info img {
+        width: 130px;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 13px !important;
+    }
+
+    .footer-block a,
+    .footer-block__details-content .list-menu__item--link,
+    .list-menu__item--link,
+    .copyright__content a {
+        color: #ffffffb3;
+        text-decoration: none !important;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        padding: 0;
+    }
+
+    .footer__copyright-gap {
+        padding-top: 10px;
+    }
+
+    .footer__copyright {
+        color: #ffffffb3;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons ul {
+        margin: 0px;
+        padding: 0;
+    }
+
+    .subscribe-form input[type="email"] {
+        height: 60px !important;
+    }
+
+    .subscribe-form button {
+        height: 60px !important;
+    }
+
+    /*Footer*/
+
+    .manage-help-icons img {
+        width: 30px;
+    }
+
+    .mobile-cebnter {
+        text-align: center;
+    }
+
+    .modern .whtveggie {
+        font-size: calc(34px + 1.3vw) !important;
+    }
+
+    .frink-srction .whatsin {
+        font-size: calc(53px + 1.3vw) !important;
+    }
+
+    .video-section .families {
+        font-size: calc(49px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .anytime .cabdy-text {
+        font-size: calc(45px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .modern .zupplement {
+        font-size: calc(44px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .doctor-approved .doctor {
+        font-size: calc(39px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .products .closes {
+        font-size: calc(28px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .list-drinks-details .div-1 {
+        text-align: center;
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    .manage-hare {
+        margin: 0 auto 0px !important;
+    }
+
+    .video-section .section_heading {
+        margin: 0 auto 0px;
+    }
+
+    .cabdy-text {
+        text-align: center !important;
+    }
+
+    .official {
+        padding: 0;
+    }
+
+    .yomzBtn {
+        font-size: 20px !important;
+    }
+
+    .banner {
+        padding-bottom: 10px;
+    }
+
+    .wish-top {
+        padding: 20px 0 30px;
+    }
+
 }
 
-.yomz-btn .btn{    width: 100%;}
-.doctor-approved {
-    padding: 40px 0px 90px;
+@media screen and (max-width:370px) {
+    .sec-content h1 {
+        font-size: calc(34px + 1.3vw) !important;
+        margin: 5px 0px;
+    }
+
+    .modern .whtveggie {
+        font-size: calc(33px + 1.3vw) !important;
+    }
+
+    .frink-srction .whatsin {
+        font-size: calc(52px + 1.3vw) !important;
+    }
+
+    .video-section .families {
+        font-size: calc(48px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .anytime .cabdy-text {
+        font-size: calc(44px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .modern .zupplement {
+        font-size: calc(43px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .doctor-approved .doctor {
+        font-size: calc(38px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .products .closes {
+        font-size: calc(27px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
 }
+
+@media screen and (max-width:350px) {
+    .sec-content h1 {
+        font-size: calc(32px + 1.3vw) !important;
+        margin: 5px 0px;
+    }
+
+    .modern .whtveggie {
+        font-size: calc(31px + 1.3vw) !important;
+    }
+
+    .frink-srction .whatsin {
+        font-size: calc(50px + 1.3vw) !important;
+    }
+
+    .video-section .families {
+        font-size: calc(46px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .anytime .cabdy-text {
+        font-size: calc(42px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .modern .zupplement {
+        font-size: calc(41px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .doctor-approved .doctor {
+        font-size: calc(36px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .products .closes {
+        font-size: calc(25px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .yomzBtn {
+        font-size: 18px !important;
+    }
+
+}
+
+@media screen and (max-width:340px) {
+    .sec-content h1 {
+        font-size: calc(30px + 1.3vw) !important;
+        margin: 5px 0px;
+    }
+
+    .modern .whtveggie {
+        font-size: calc(29px + 1.3vw) !important;
+    }
+
+    .frink-srction .whatsin {
+        font-size: calc(48px + 1.3vw) !important;
+    }
+
+    .video-section .families {
+        font-size: calc(42px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .anytime .cabdy-text {
+        font-size: calc(40px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .modern .zupplement {
+        font-size: calc(39px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .doctor-approved .doctor {
+        font-size: calc(34px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .products .closes {
+        font-size: calc(23px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+    .yomzBtn {
+        font-size: 17px !important;
+    }
+
 }
