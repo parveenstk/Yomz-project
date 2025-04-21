@@ -54,6 +54,7 @@ ul {
     font-family: 'century_gothicregular';
     font-weight: normal;
     font-style: normal;
+    font-size: 18px;
 }
 
 .upColor {
@@ -306,7 +307,7 @@ header .nav li a {
 /*marquee*/
 
 .marquee_section {
-    background: #000;
+    background: #00e7ff;
 }
 
 .marquee_track {
@@ -338,9 +339,10 @@ header .nav li a {
 .marquee h3 {
     margin: 0;
     font-size: 18px;
-
-    font-weight: 800;
-    color: #fff;
+    font-family: 'century_gothicregular';
+    color: #000;
+    font-weight: 900 !important;
+    text-transform: uppercase;
 }
 
 .marquee_code {
@@ -862,7 +864,7 @@ header .nav li a {
 }
 
 .doctor-approved .testi-qot h3 {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .doctor-approved .testi-qot .fa-quote-left {
