@@ -1503,8 +1503,8 @@ footer .subscribe-form button {
 }
 
 .yomzBtn {
-    background-color: #ff073a !important;
-    color: #fff700 !important;
+    background-color: #ff073a;
+    color: #fff700;
     font-size: 24px !important;
     font-weight: 800;
     border-radius: 34px;
@@ -1513,6 +1513,11 @@ footer .subscribe-form button {
     margin: auto;
     width: auto;
     text-transform: none;
+}
+
+.yomzBtnUpdated {
+    background-color: #00e7ff !important;
+    color: #ff073a !important;
 }
 
 .ul-center {
