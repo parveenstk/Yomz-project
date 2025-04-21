@@ -1599,6 +1599,11 @@ footer .subscribe-form button {
 
 @media screen and (max-width:767px) {
 
+    .alignCen {
+        display: flex;
+        justify-content: center;
+    }
+
     /*Header*/
     .join-span {
         font-size: 12px;
