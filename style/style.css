@@ -141,8 +141,8 @@ header .nav li a {
 }
 
 .banner {
-    background: #fefadd;
-    padding-bottom: 50px;
+    background: #fff;
+    padding: 50px 0px 60px;
 }
 
 .sec-content h1 {
@@ -177,16 +177,13 @@ header .nav li a {
     display: flex;
     gap: 10px;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .featured-image-with-text__text--caption:first-child {
     margin-top: 0;
 }
 
-.review_text {
-    font-weight: 600;
-}
 
 .featured-image-with-text__text ul {
     list-style: none;
@@ -213,9 +210,9 @@ header .nav li a {
     width: 20px;
     min-width: 20px;
     height: 20px;
-    border-radius: 100%;
-    display: block;
-    background-image: url(../images/check.svg);
+  border-radius: 100%;
+    background-color: #fff700;
+    background-image: url(../images/icon-checkbox-black.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -270,6 +267,8 @@ header .nav li a {
     display: inline-flex;
     gap: 8px;
 }
+
+.reviews-top{padding-top: 20px;}
 
 .reviews-thumb img {
     border-radius: 50px;
@@ -433,10 +432,6 @@ header .nav li a {
     margin-bottom: 50px;
 }
 
-.section_heading {
-    margin: 0 auto 40px;
-}
-
 .section_heading1 {
     margin: 0 auto 20px !important;
 }
@@ -465,7 +460,7 @@ header .nav li a {
     text-align: center;
     font-size: 57px;
     font-weight: 400;
-    line-height: 110%;
+    line-height:normal;
     text-transform: uppercase !important;
     font-family: 'super_boysregular';
     margin-top: 10px;
@@ -487,13 +482,11 @@ header .nav li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/underline.svg);
+/*    background-image: url(../images/underline.svg);*/
 }
 
 .section_heading .text p {
-    margin: 0;
     text-align: center;
-    letter-spacing: .1px;
     margin-top: 15px;
 }
 
@@ -528,14 +521,16 @@ header .nav li a {
     border: 2px solid #ffca12;
     border-radius: 8px;
     font-size: 28px;
-
     letter-spacing: -2px;
     line-height: 1;
     color: #000;
-    display: block;
+    display: flex;
     padding: 7px;
     text-align: center;
-    width: 90px;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
 }
 
 .video-right-content {
@@ -562,6 +557,13 @@ header .nav li a {
     width: 40px;
 }
 
+
+.featur-listdone p{margin-bottom: 0px; margin-top: 0px !important;}
+.featur-listdone img{width: 20px;}
+
+.featur-listdone .col p{text-align: left !important;}
+
+
 /*modern*/
 
 /**/
@@ -585,7 +587,7 @@ header .nav li a {
 .frink-srction {
     background: #fff700;
     margin-top: -30px;
-    padding: 60px 0 180px;
+    padding: 60px 0 120px;
 }
 
 .frink-srction .section_heading {
@@ -602,7 +604,7 @@ header .nav li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/Underline_2.svg);
+/*    background-image: url(../images/Underline_2.svg);*/
 }
 
 .frink-srction .subtitle {
@@ -790,6 +792,9 @@ header .nav li a {
     margin-top: -130px;
 }
 
+
+
+
 /**/
 
 /*Video*/
@@ -860,7 +865,7 @@ header .nav li a {
 /*Doctor-Approved Goodness*/
 
 .doctor-approved {
-    padding: 80px 0px;
+    padding: 40px 0px 120px;
 }
 
 .doctor-approved .testi-qot h3 {
@@ -868,7 +873,7 @@ header .nav li a {
 }
 
 .doctor-approved .testi-qot .fa-quote-left {
-    font-size: 38px;
+    font-size: 31px;
 }
 
 .testi-qot {
@@ -906,6 +911,15 @@ header .nav li a {
 }
 
 /*effect*/
+
+
+
+
+.zupplement-mb1{    margin-bottom: 30px;}
+.zupplement-mb1 p{ margin-top: 0px !important;}
+
+
+
 
 /**/
 
@@ -959,6 +973,12 @@ header .nav li a {
     margin-top: -13px;
 }
 
+.modern.products {
+
+    padding: 50px 0 60px;
+}
+
+
 .products .underline-blue:before {
     content: "";
     display: block;
@@ -969,7 +989,7 @@ header .nav li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/Underline-blue.svg);
+/*    background-image: url(../images/Underline-blue.svg);*/
 }
 
 .products .subtitle {
@@ -990,6 +1010,11 @@ header .nav li a {
     justify-content: space-between;
 }
 
+.featured-product-list-card-header{    display: block;
+    text-align: center;}
+
+
+.featured-product-list-card-header .inline-richtext{ font-weight:900; -webkit-text-stroke: 0.5px black; }
 .products-thumbs .yomz-btn .btn {
     display: block;
 }
@@ -1084,7 +1109,7 @@ header .nav li a {
     height: 20px;
     min-width: 20px;
     border-radius: 100%;
-    background-color: #ffca12;
+    background-color: #fff700;
     background-image: url(../images/icon-checkbox-black.svg);
     background-size: 12px;
     background-repeat: no-repeat;
@@ -1100,12 +1125,12 @@ header .nav li a {
 }
 
 .purple-btn.button-wrapper {
-    background: #bbb2ff !important;
+    background: #fff700 !important;
 
 }
 
 .plo .under_buttons span:before {
-    background-color: #ffca12 !important;
+    background-color: #fff700 !important;
 }
 
 .gruntr-icons {
@@ -1228,9 +1253,8 @@ header .nav li a {
 
 .featured-review-columns-card__text * {
     font-weight: 600;
-    line-height: 1.2;
     color: #000;
-    margin: 0;
+margin-bottom: 0px;
 }
 
 .featured-review-columns-card__info {
@@ -1290,10 +1314,7 @@ header .nav li a {
     margin-top: 20px;
 }
 
-.subscribe-form p {
-    font-size: 13px;
 
-}
 
 .subscribe-form input[type="email"] {
     border-radius: 36px !important;
@@ -1301,7 +1322,7 @@ header .nav li a {
     height: 47px !important;
     font-size: 16px !important;
     font-weight: 700 !important;
-    color: #0000004d !important;
+    color: #000 !important;
     border: 0 !important;
     padding: 10px 20px !important;
 }
@@ -1515,6 +1536,7 @@ footer .subscribe-form button {
     margin: auto;
     width: auto;
     text-transform: none;
+    text-transform: uppercase;
 }
 
 .yomzBtnUpdated {
@@ -1527,6 +1549,8 @@ footer .subscribe-form button {
     margin: 0;
     padding: 0;
 }
+
+
 
 .title-h1 {
     margin-top: 15px !important;
@@ -1606,6 +1630,35 @@ footer .subscribe-form button {
 
 @media screen and (max-width:767px) {
 
+    .featured-product-list-card-meta h4 {
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+
+.featur-listdone img {
+    width: 24px;
+}
+
+.featur-listdone .col{margin-bottom: 5px;}
+
+
+
+
+.yn-blod-big{font-size: calc(11px + 1vw) !important;}
+
+    .yomz-heading{    margin-top: 10px;}
+
+    .section_heading{    margin-bottom: 0px;}
+
+    .modern.official {
+    padding-top: 50px;
+}
+
+.modern.products {
+    padding: 30px 0 80px;
+}
+
     .alignCen {
         display: flex;
         justify-content: center;
@@ -1674,7 +1727,7 @@ footer .subscribe-form button {
     .section_heading h2 {
         font-size: 34px;
         font-size: calc(27px + 1.3vw) !important;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .anytime.effect img {
@@ -1690,7 +1743,7 @@ footer .subscribe-form button {
     }
 
     .banner-content {
-        padding: 20px 0px 20px 0px !important;
+        padding: 0px 0px 0px 0px !important;
         text-align: center;
     }
 
@@ -1705,19 +1758,10 @@ footer .subscribe-form button {
 
     .smsize {
         font-size: calc(14px + 1.3vw) !important;
+        margin-bottom: 15px;
     }
 
-    p {
-        font-size: calc(12px + 1vw) !important;
-    }
-
-    li {
-        font-size: calc(12px + 1vw) !important;
-    }
-
-    .list-done.featured-image-with-text__text li {
-        font-size: calc(12px + 1vw) !important;
-    }
+   
 
     .reviews-thumb {
         height: auto;
@@ -1782,7 +1826,7 @@ footer .subscribe-form button {
     /*Footer*/
     .subscribe {
         background: #fff700;
-        padding: 20px 0 0px;
+        padding: 20px 0 20px;
     }
 
     .subscribe-form p {
@@ -1877,7 +1921,7 @@ footer .subscribe-form button {
     }
 
     .modern .zupplement {
-        font-size: calc(44px + 1.3vw) !important;
+        font-size: calc(42px + 1.3vw) !important;
         line-height: normal !important;
     }
 
@@ -1921,6 +1965,10 @@ footer .subscribe-form button {
         padding-bottom: 10px;
     }
 
+    .banner {
+    padding: 20px 0px 0px;
+}
+
     .wish-top {
         padding: 20px 0 30px;
     }
@@ -1952,12 +2000,12 @@ footer .subscribe-form button {
     }
 
     .modern .zupplement {
-        font-size: calc(43px + 1.3vw) !important;
+        font-size: calc(41px + 1.3vw) !important;
         line-height: normal !important;
     }
 
     .doctor-approved .doctor {
-        font-size: calc(38px + 1.3vw) !important;
+        font-size: calc(37px + 1.3vw) !important;
         line-height: normal !important;
     }
 
@@ -1993,7 +2041,7 @@ footer .subscribe-form button {
     }
 
     .modern .zupplement {
-        font-size: calc(41px + 1.3vw) !important;
+        font-size: calc(39px + 1.3vw) !important;
         line-height: normal !important;
     }
 
@@ -2038,7 +2086,7 @@ footer .subscribe-form button {
     }
 
     .modern .zupplement {
-        font-size: calc(39px + 1.3vw) !important;
+        font-size: calc(37px + 1.3vw) !important;
         line-height: normal !important;
     }
 
@@ -2055,5 +2103,31 @@ footer .subscribe-form button {
     .yomzBtn {
         font-size: 17px !important;
     }
+
+}
+
+@media screen and (max-width:326px) {
+
+    .doctor-approved .doctor {
+        font-size: calc(33px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+}
+
+@media screen and (max-width:316px) {
+.doctor-approved .doctor {
+        font-size: calc(30px + 1.3vw) !important;
+        line-height: normal !important;
+    }
+
+}
+
+
+@media screen and (max-width:308px) {
+.modern .zupplement {
+        font-size: calc(33px + 1.3vw) !important;
+    }
+
 
 }
