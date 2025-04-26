@@ -28,14 +28,10 @@
       <div class="container">
          <div class="d-flex hd-head flex-wrap align-items-center justify-content-between py-2 mb-0">
             <ul class="nav d-none d-lg-flex col-md-auto mb-2 justify-content-center mb-md-0">
-               <li><a href="https://suretekinfosoft.com/demo106/yomz-storefront-home/index.html"
-                     class="nav-link px-2 link-dark">Home</a></li>
-               <li><a href="https://suretekinfosoft.com/demo106/yomz/pages/yomz-story/"
-                     class="nav-link px-2 link-dark">About</a></li>
-               <li><a href="https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/"
-                     class="nav-link px-2 link-dark">OG Gummies</a></li>
-               <li><a href="https://suretekinfosoft.com/demo106/products/yomz-sours/"
-                     class="nav-link px-2 link-dark">Sours</a></li>
+               <li><a id="home-header" class="nav-link px-2 link-dark">Home</a></li>
+               <li><a id="about-header" class="nav-link px-2 link-dark">About</a></li>
+               <li><a id="oggummies-header" class="nav-link px-2 link-dark">OG Gummies</a></li>
+               <li><a id="sours-header" class="nav-link px-2 link-dark">Sours</a></li>
             </ul>
             <button class="btn d-lg-none" id="menu-toggle">
                <i class="fa fa-bars" aria-hidden="true" style="
@@ -49,7 +45,7 @@
 "></i>
 
             </button>
-            <a href="https://suretekinfosoft.com/demo106/yomz-storefront-home/"
+            <a id="yomzLogo2"
                class="d-flex logo-md-spce justify-content-center align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                <img src="images/logo.png" class="img-fluid logo-img">
             </a>
@@ -69,8 +65,8 @@
          <ul class="nav flex-column">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">OG Gummies</a></li>
-            <li><a href="#" class="nav-link">Sours</a></li>
+            <li><a href="ogGummiesProduct" class="nav-link">OG Gummies</a></li>
+            <li><a href="soursProduct" class="nav-link">Sours</a></li>
             <li><a href="#" class="nav-link">Contact</a></li>
          </ul>
 
@@ -134,7 +130,7 @@
                            </p>
 
                            <div class="yomz-btn">
-                              <a href="#" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
+                              <a href="#try-yomz" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
                                     aria-hidden="true"></i></a>
                            </div>
                   </div>
@@ -805,7 +801,7 @@
                      <i>That’s the magic of YOMZ!</i>
                   </p>
 
-                  <div class="yomz-btn"><a href="#" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
+                  <div class="yomz-btn"><a href="#try-yomz" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
                            aria-hidden="true"></i></a></div>
                </div>
             </div>
@@ -925,12 +921,13 @@
                </div>
             </div>
          </div>
-         <div class="row justify-content-center">
+         <div id="try-yomz" class="row justify-content-center">
             <div class="col-md-4">
+
+               <!-- OG Gummies -->
                <div class="products-thumbs">
                   <div class="featured-product-list-card-header">
                      <h3 class="inline-richtext">OG GUMMIES</h3>
-                     <!-- <div class="subtext">Drink 2+ Per Day</div> -->
                   </div>
                   <img src="images/red-gummy.png" class="img-fluid">
                   <div class="featured-product-list-card-info">
@@ -944,17 +941,21 @@
                      <div class="featured-product-list-card-prices"><s class="compare-price">$59.00</s></div>
                   </div>
                   <div class="featured-product-list-card-footer">
-                     <div class="yomz-btn"><a href="#" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
-                              aria-hidden="true"></i></a></div>
+                     <div class="yomz-btn">
+                        <a id="ogGummiesProduct" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
+                              aria-hidden="true"></i>
+                        </a>
+                     </div>
                      <div class="under_buttons"><span>1g SUGAR</span><span>CRUCIAL MICRONUTRIENTS</span></div>
                   </div>
                </div>
             </div>
+
+            <!-- Yomz Sours -->
             <div class="col-md-4">
                <div class="products-thumbs">
                   <div class="featured-product-list-card-header">
                      <h3 class="inline-richtext">YOMZ SOURS</h3>
-                     <!-- <div class="subtext">Drink As Needed</div> -->
                   </div>
                   <img src="images/red-gummy.png" class="img-fluid">
                   <div class="featured-product-list-card-info">
@@ -968,7 +969,7 @@
                      <div class="featured-product-list-card-prices"><s class="compare-price">$49.00</s></div>
                   </div>
                   <div class="featured-product-list-card-footer plo">
-                     <div class="yomz-btn"><a href="#" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
+                     <div class="yomz-btn"><a id="soursProduct" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
                               aria-hidden="true"></i></a></div>
                      <div class="under_buttons"><span>1g SUGAR</span><span>CRUCIAL MICRONUTRIENTS</span></div>
                   </div>
@@ -1215,7 +1216,7 @@
          <div class="row">
             <div class="col-md-4">
                <div class="company-info">
-                  <a href="https://suretekinfosoft.com/demo106/yomz-storefront-home/">
+                  <a id="yomzLogo">
                      <img src="images/logo.png" class="img-fluid">
                   </a>
                   <p>We're on a mission to smash "hidden hunger" by closing the nutrition gaps and helping improve the
@@ -1226,8 +1227,10 @@
                <h2 class="footer-block__heading inline-richtext">Shop</h2>
                <ul class="footer-block__details-content list-unstyled">
                   <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Shop All</a></li>
-                  <li><a href="https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/" class="link link--text list-menu__item list-menu__item--link">Buy OG Gummies</a></li>
-                  <li><a href="https://suretekinfosoft.com/demo106/products/yomz-sours/" class="link link--text list-menu__item list-menu__item--link">Buy YOMZ Sours</a></li>
+                  <li><a href="https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/"
+                        class="link link--text list-menu__item list-menu__item--link">Buy OG Gummies</a></li>
+                  <li><a href="https://suretekinfosoft.com/demo106/products/yomz-sours/"
+                        class="link link--text list-menu__item list-menu__item--link">Buy YOMZ Sours</a></li>
                   <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Our Story</a></li>
                   <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Manage Account</a></li>
                </ul>
@@ -1297,6 +1300,29 @@
       closeBtn.addEventListener('click', () => {
          sidebar.classList.remove('show');
       });
+
+      // Links in the variable
+      const links = {
+         // Header
+         "home-header": "https://suretekinfosoft.com/demo106/yomz-storefront-home/",
+         "about-header": "https://suretekinfosoft.com/demo106/yomz/pages/yomz-story/",
+         "oggummies-header": "https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/",
+         "sours-header": "https://suretekinfosoft.com/demo106/products/yomz-sours/",
+
+         // try yomz buttons
+         "ogGummiesProduct": "https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/",
+         "soursProduct": "https://suretekinfosoft.com/demo106/products/yomz-sours/",
+
+         // logo
+         "yomzLogo": "https://suretekinfosoft.com/demo106/yomz-storefront-home/",
+      };
+
+      for (const [id, url] of Object.entries(links)) {
+         const link = document.getElementById(id);
+         if (link) {
+            link.href = url;
+         }
+      }
    </script>
 </body>
 
