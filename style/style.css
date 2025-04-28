@@ -58,12 +58,12 @@ ul {
 }
 
 .upColor {
-    color: #fff700 !important;
-    background: #ff073a !important;
+    color: #FFEB00 !important;
+    background: #E6193C !important;
 }
 
 .topbaar {
-    background: #FF073A;
+    background: #E6193C;
     padding: 6px 0;
 }
 
@@ -73,7 +73,7 @@ ul {
 }
 
 .join-span {
-    background: #fff700;
+    background: #FFEB00;
     color: #000;
     border-radius: 30px;
     padding: 0px 10px;
@@ -91,7 +91,7 @@ ul {
 /*header*/
 
 header {
-    background: #00e7ff;
+    background: #1EB9F0;
 }
 
 header .nav li a {
@@ -210,7 +210,7 @@ header .nav li a {
     min-width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: #fff700;
+    background-color: #FFEB00;
     background-image: url(../images/icon-checkbox-black.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -238,24 +238,23 @@ header .nav li a {
 .yomz-btn .btn {
     margin-top: 20px !important;
     font-size: 20px;
-
     letter-spacing: 0;
     padding: 10px 35px;
     display: inline-block;
     text-transform: none;
-    color: #fff700 !important;
-    background: #ff073a;
+    color: #fff !important;
+    background: #694191;
     border-radius: 40px;
     align-items: center;
     position: relative;
-    border: 1px solid rgb(17 17 17 / 10%);
+    border: 1px solid #694191;
     font-family: 'century_gothicbold';
 }
 
 .yomz-btn .btn:hover {
-    background: #fff700;
-    color: #ff073a !important;
-    border: 1px solid #fff700;
+    background: #F0A0C3;
+    color: #fff !important;
+    border: 1px solid #F0A0C3;
 }
 
 /*.yomz-btn .fa{font-size: 28px;}*/
@@ -281,7 +280,7 @@ header .nav li a {
     font-size: 14px !important;
     align-items: center;
     border-radius: 16px;
-    background: #fff700;
+    background: #FFEB00;
     padding: 20px;
     height: 230px;
 }
@@ -307,7 +306,8 @@ header .nav li a {
 /*marquee*/
 
 .marquee_section {
-    background: #00e7ff;
+    background: url(../images/blue-bg.jpg);
+    background-repeat: repeat;
 }
 
 .marquee_track {
@@ -452,8 +452,8 @@ header .nav li a {
     text-transform: uppercase;
     width: auto;
     margin-bottom: 10px;
-    background: #ff073a !important;
-    color: #fff700;
+    background: #E6193C !important;
+    color: #FFEB00;
 }
 
 .section_heading h2 {
@@ -592,7 +592,7 @@ header .nav li a {
 }
 
 .frink-srction {
-    background: #fff700;
+    background: #FFEB00;
     margin-top: -30px;
     padding: 60px 0 120px;
 }
@@ -970,10 +970,23 @@ header .nav li a {
 /**/
 
 /*products*/
+div#section-wave-template--17951666864320__wave_section_JtArtC {
+    height: 3.3vw !important;
+    margin-top: -10px;
+}
 
 .products {
-    background: #ffd5dd;
+    background: #0AA03C;
     margin-top: -13px;
+}
+
+.products .yomzBtnUpdated {
+    background-color: #FFEB00 !important;
+    color: #000 !important;
+}
+
+.products .section_heading {
+    color: #fff;
 }
 
 .modern.products {
@@ -1116,7 +1129,7 @@ header .nav li a {
     height: 20px;
     min-width: 20px;
     border-radius: 100%;
-    background-color: #fff700;
+    background-color: #FFEB00;
     background-image: url(../images/icon-checkbox-black.svg);
     background-size: 12px;
     background-repeat: no-repeat;
@@ -1132,12 +1145,12 @@ header .nav li a {
 }
 
 .purple-btn.button-wrapper {
-    background: #fff700 !important;
+    background: #FFEB00 !important;
 
 }
 
 .plo .under_buttons span:before {
-    background-color: #fff700 !important;
+    background-color: #FFEB00 !important;
 }
 
 .gruntr-icons {
@@ -1313,7 +1326,7 @@ header .nav li a {
 /*subscribe*/
 
 .subscribe {
-    background: #fff700;
+    background: #FFEB00;
     padding: 50px 0;
 }
 
@@ -1417,14 +1430,14 @@ footer .subscribe-form input[type="email"] {
 }
 
 footer .subscribe-form button {
-    background: #fff700 !important;
+    background: #FFEB00 !important;
     border-radius: 0px 36px 36px 0px !important;
     padding: 0 !important;
     width: 100% !important;
     font-size: 17px !important;
     font-weight: 700 !important;
     font-family: var(--font-subheading-family) !important;
-    color: #ff073a !important;
+    color: #E6193C !important;
     line-height: 38px !important;
     height: 38px !important;
     border: 0 !important;
@@ -1457,8 +1470,8 @@ footer .subscribe-form button {
 
 /*New-Code*/
 .tryYomzBtn {
-    background-color: #ff073a !important;
-    color: #fff700 !important;
+    background-color: #E6193C !important;
+    color: #FFEB00 !important;
 }
 
 .ul-center {
@@ -1481,8 +1494,8 @@ footer .subscribe-form button {
 }
 
 .subtitle-Text {
-    background: #ff073a;
-    color: #fff700;
+    background: #E6193C;
+    color: #FFEB00;
     font-weight: 800;
     font-size: 12px;
     font-weight: 800;
@@ -1503,8 +1516,8 @@ footer .subscribe-form button {
 .anytime-data .slt {
     font-size: 12px;
     font-weight: 600;
-    background-color: #ff073a !important;
-    color: #fff700 !important;
+    background-color: #E6193C !important;
+    color: #FFEB00 !important;
     border-radius: 17px;
     padding: 5px 15px;
     display: inline-block;
@@ -1515,8 +1528,8 @@ footer .subscribe-form button {
 }
 
 .tryYomzBtn {
-    background-color: #ff073a !important;
-    color: #fff700 !important;
+    background-color: #E6193C !important;
+    color: #FFEB00 !important;
 }
 
 .section_heading {
@@ -1531,8 +1544,8 @@ footer .subscribe-form button {
 }
 
 .yomzBtn {
-    background-color: #ff073a;
-    color: #fff700;
+    background-color: #E6193C;
+    color: #FFEB00;
     font-size: 24px !important;
     font-weight: 800;
     border-radius: 34px;
@@ -1545,8 +1558,8 @@ footer .subscribe-form button {
 }
 
 .yomzBtnUpdated {
-    background-color: #00e7ff !important;
-    color: #ff073a !important;
+    background-color: #1EB9F0 !important;
+    color: #fff !important;
 }
 
 .ul-center {
@@ -1561,8 +1574,8 @@ footer .subscribe-form button {
 }
 
 .subtitle-Text {
-    background: #ff073a;
-    color: #fff700;
+    background: #E6193C;
+    color: #FFEB00;
     font-weight: 800;
     font-size: 12px;
     font-weight: 800;
@@ -1583,8 +1596,8 @@ footer .subscribe-form button {
 .anytime-data .slt {
     font-size: 12px;
     font-weight: 600;
-    background-color: #ff073a !important;
-    color: #fff700 !important;
+    background-color: #E6193C !important;
+    color: #FFEB00 !important;
     border-radius: 17px;
     padding: 5px 15px;
     display: inline-block;
@@ -1632,6 +1645,15 @@ footer .subscribe-form button {
 }
 
 @media screen and (max-width:767px) {
+
+    .yomz-btn {
+        text-align: center;
+    }
+
+    .yomz-btn .btn {
+        width: auto !important;
+        display: inline-block;
+    }
 
     .featured-product-list-card-meta h4 {
         font-size: 19px;
@@ -1792,7 +1814,7 @@ footer .subscribe-form button {
     }
 
     .frink-srction {
-        background: #fff700;
+        background: #FFEB00;
         margin-top: -30px;
         padding: 20px 0 20px;
     }
@@ -1830,7 +1852,7 @@ footer .subscribe-form button {
 
     /*Footer*/
     .subscribe {
-        background: #fff700;
+        background: #FFEB00;
         padding: 20px 0 20px;
     }
 

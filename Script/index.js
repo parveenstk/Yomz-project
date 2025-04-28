@@ -33,6 +33,6 @@ for (const [id, url] of Object.entries(links)) {
     if (link) {
         link.href = url;
     }
-} 
+}
 
 // when key '/' press it will take email input 
