@@ -18,6 +18,21 @@
 </head>
 
 <body>
+
+   <!-- Toaster Message -->
+   <div class="toaster hide" id="toaster">
+      <div id="timerline" class="timerline"></div>
+      <div class="inner-toaster">
+         <div>
+            <p class="toaster-success" id="toaster-title"></p>
+            <p class="toaster-text" id="toaster-text"></p>
+         </div>
+         <div class="toaster-cross" id="toaster-cross">
+            <img alt="toaster-cross" width="40">
+         </div>
+      </div>
+   </div>
+
    <!-- Topbaar -->
    <div class="topbaar">
       <div class="container">
@@ -1055,8 +1070,10 @@
                <div class="section_heading featured-video-column_heading text-center">
                   <div class="subscribe-form">
                      <form class="row g-3">
+
+                        <!-- Email Address Input -->
                         <div class="col-md-8">
-                           <input type="email" class="form-control" id="inputPassword" placeholder="Your Email Address">
+                           <input type="email" class="form-control" id="emailAddress" placeholder="Your Email Address">
                            <div data-lastpass-icon-root=""
                               style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
                            </div>
