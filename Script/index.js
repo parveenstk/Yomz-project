@@ -34,3 +34,5 @@ for (const [id, url] of Object.entries(links)) {
         link.href = url;
     }
 } 
+
+// when key '/' press it will take email input 
