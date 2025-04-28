@@ -93,7 +93,6 @@
                      class="featured-image-with-text__text featured-image-with-text__text--caption has-rating review_text review_text--large review_text">
                      <div class="featured-image-with-text__text--caption-review-star">
 
-
                         <img src="images/red-star.png">
 
                      </div>
@@ -346,7 +345,6 @@
                   </h2>
                   <div class="text mt-2 featur-listdone">
 
-
                      <div class="col d-flex align-items-start">
                         <div class="icon-square flex-shrink-0 me-2"><img src="images/lolipop.png" class="img-fluid">
                         </div>
@@ -380,7 +378,6 @@
                            <p>No junk, just <b>joy</b></p>
                         </div>
                      </div>
-
 
                      <p class="font400">
                         YOMZ is packed with <b>vitamins</b> and micronutrients...
@@ -1300,31 +1297,10 @@
       closeBtn.addEventListener('click', () => {
          sidebar.classList.remove('show');
       });
-
-      // Links in the variable
-      const links = {
-         // Header
-         "home-header": "https://suretekinfosoft.com/demo106/yomz-storefront-home/",
-         "about-header": "https://suretekinfosoft.com/demo106/yomz/pages/yomz-story/",
-         "oggummies-header": "https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/",
-         "sours-header": "https://suretekinfosoft.com/demo106/products/yomz-sours/",
-
-         // try yomz buttons
-         "ogGummiesProduct": "https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/",
-         "soursProduct": "https://suretekinfosoft.com/demo106/products/yomz-sours/",
-
-         // logo
-         "yomzLogo": "https://suretekinfosoft.com/demo106/yomz-storefront-home/",
-         "yomzLogo2": "https://suretekinfosoft.com/demo106/yomz-storefront-home/",
-      };
-
-      for (const [id, url] of Object.entries(links)) {
-         const link = document.getElementById(id);
-         if (link) {
-            link.href = url;
-         }
-      }
    </script>
+
+   <!-- Import Script -->
+   <script src="./Script/index.js"></script>
 </body>
 
 </html>
