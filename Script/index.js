@@ -1,3 +1,16 @@
+// Hamburger Menu Script
+const toggleBtn = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('mobile-sidebar');
+const closeBtn = document.getElementById('close-sidebar');
+
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.add('show');
+});
+
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('show');
+});
+
 // Links in the variable
 const links = {
     // Header
