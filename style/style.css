@@ -1711,6 +1711,26 @@ footer .subscribe-form button {
 
 @media screen and (max-width:767px) {
 
+    .toaster {
+        width: 300px;
+        box-shadow: -1px 2px 4px gray;
+        left: 40px;
+
+        .toaster-success {
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+
+        .toaster-text {
+            font-size: 12px !important;
+            margin-bottom: 0px;
+        }
+
+        .toaster-cross {
+            cursor: pointer;
+        }
+    }
+
     .yomz-btn {
         text-align: center;
     }
