@@ -65,6 +65,7 @@ form.addEventListener("submit", function (event) {
         localStorage.setItem("submitted Email", emailInput.value)
         updateToaster('success');
         autoHide();
+        saveEmail(emailInput.value);
     } else {
         updateToaster('warning');
         autoHide();
@@ -72,6 +73,17 @@ form.addEventListener("submit", function (event) {
     emailInput.value = '';
 
 });
+
+// API call to update the email addres in "excel sheet"
+const url = 'https://yomz-pages-data.vercel.app/api/hello';
+// const url = 'http://localhost:3000/api/hello';
+const saveEmail = async (email) => {
+    const response = await fetch(`${url}?email=${email}`, {
+        method: 'GET'
+    }).then(res => res.json());
+
+    console.log("response:", response)
+};
 
 // Function to update toaster dynamically
 const updateToaster = (type) => {

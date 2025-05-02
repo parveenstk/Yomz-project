@@ -2,1314 +2,940 @@
 <html lang="en">
 
 <head>
-   <title>YOMZ | YOMZ </title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="style/style.css" rel="stylesheet">
-   <!-- Light Mode Favicon -->
-   <link rel="icon" href="images/light.png" media="(prefers-color-scheme: light)">
-
-   <!-- Dark Mode Favicon -->
-   <link rel="icon" href="images/dark.png" media="(prefers-color-scheme: dark)">
-
+    <title>YOMZ | YOMZ </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style/style.css" rel="stylesheet">
+    <meta name="description"
+        content="Discover YOMZ – delicious, science-backed gummy supplements that support family wellness. Keto-friendly, vegan, and packed with the benefits of 3 servings of fruits and veggies.">
+    <!-- Light Mode Favicon -->
+    <link rel="icon" href="images/light.png" alt="light-img" media="(prefers-color-scheme: light)">
+    <!-- Dark Mode Favicon -->
+    <link rel="icon" href="images/dark.png" alt="dark-img" media="(prefers-color-scheme: dark)">
 </head>
 
-<body>
-
-   <!-- Toaster Message -->
-   <div class="toaster hide" id="toaster">
-      <div id="timerline" class="timerline"></div>
-      <div class="inner-toaster">
-         <div>
-            <p class="toaster-success" id="toaster-title"></p>
-            <p class="toaster-text" id="toaster-text"></p>
-         </div>
-         <div class="toaster-cross" id="toaster-cross">
-            <img alt="toaster-cross" width="40">
-         </div>
-      </div>
-   </div>
-
-   <!-- Topbaar -->
-   <div class="topbaar">
-      <div class="container">
-         <div class="row">
-            <p class="text-center"><span class="join-span">WANT $100K? Tap for details</span></p>
-         </div>
-      </div>
-   </div>
-   <!-- Topbaar -->
-
-   <!-- Header -->
-   <header>
-      <div class="container">
-         <div class="d-flex hd-head flex-wrap align-items-center justify-content-between py-2 mb-0">
-            <ul class="nav d-none d-lg-flex col-md-auto mb-2 justify-content-center mb-md-0">
-               <li><a id="home-header" class="nav-link px-2 link-dark">Home</a></li>
-               <li><a id="about-header" class="nav-link px-2 link-dark">About</a></li>
-               <li><a id="oggummies-header" class="nav-link px-2 link-dark">OG Gummies</a></li>
-               <li><a id="sours-header" class="nav-link px-2 link-dark">Sours</a></li>
-            </ul>
-            <button class="btn d-lg-none" id="menu-toggle">
-               <i class="fa fa-bars" aria-hidden="true" style="
-    font-size: 31px;
-    color: #FFEB00;
-    text-shadow:
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-"></i>
-
-            </button>
-            <a id="yomzLogo2"
-               class="d-flex logo-md-spce justify-content-center align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-               <img src="images/logo.png" class="img-fluid logo-img">
-            </a>
-            <div class="col-md-3 text-end manage-help-icons">
-               <ul class="nav mb-0 justify-content-center mb-md-0 d-flex align-items-center">
-                  <li><a href="#" class="nav-link px-2 link-dark d-none d-lg-flex col-md-auto">Contact</a></li>
-                  <li><a href="#" class="nav-link px-2 link-dark"> <img src="images/user-icon.png"></a></li>
-                  <li><a href="#" class="nav-link px-2 link-dark"> <img src="images/store-icon.png"></a></li>
-               </ul>
+<body> <!-- Toaster Message -->
+    <div class="toaster hide" id="toaster">
+        <div id="timerline" class="timerline"></div>
+        <div class="inner-toaster">
+            <div>
+                <p class="toaster-success" id="toaster-title"></p>
+                <p class="toaster-text" id="toaster-text"></p>
             </div>
-         </div>
-      </div>
-
-      <!-- Sidebar -->
-      <div id="mobile-sidebar" class="sidebar d-lg-none">
-         <button class="close-btn" id="close-sidebar">&times;</button>
-         <ul class="nav flex-column">
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="ogGummiesProduct" class="nav-link">OG Gummies</a></li>
-            <li><a href="soursProduct" class="nav-link">Sours</a></li>
-            <li><a href="#" class="nav-link">Contact</a></li>
-         </ul>
-
-         <div class="social-icons">
-            <p class="text-uppercase">socials</p>
-            <ul>
-               <li><a href="#"><img src="images/facebook.png"></a></li>
-               <li><a href="#"><img src="images/instagram.png"></a></li>
-               <li><a href="#"><img src="images/tik-tok.png"></a></li>
-               <li><a href="#"><img src="images/pinterest.png"></a></li>
-            </ul>
-         </div>
-      </div>
-   </header>
-   <!-- Header -->
-
-   <!-- Banner -->
-   <div class="banner">
-      <div class="container">
-         <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-               <div class="banner-content">
-                  <div
-                     class="featured-image-with-text__text featured-image-with-text__text--caption has-rating review_text review_text--large review_text">
-                     <div class="featured-image-with-text__text--caption-review-star">
-
-                        <img src="images/red-star.png">
-
-                     </div>
-                     <strong> 1000s of happy families!</strong>
-                  </div>
-                  <div class="sec-content">
-                     <h1>
-                        <span class="left-heading">
-                           <i>Nomz. Nomz. Nomz.</i>
-                        </span>
-                        <div class="smsize">
-                           <span>That’s the sound of YOMZ!</span>
-                        </div>
-                     </h1>
-                     <p>
-                        It’s <strong>love</strong> at first taste + whole-body<br>
-                        <strong>wellness.</strong> For the entire family.<br>
-                        So get your <strong>nomz</strong> on.<br>
-                        And supercharge your day <br>
-                        the <strong>YOMZ</strong> way.
-                     </p>
-                     <div class="list-done featured-image-with-text__text">
-                        <ul>
-                           <li>Prebiotic Fiber Source</li>
-                           <li>Keto-friendly</li>
-                           <li>Gluten-free</li>
-                           <li>Non-GMO</li>
-                           <li>Vegan</li>
-                        </ul>
-                     </div>
-                     <h2 class="yomz-heading">YOMZ.<h2>
-                           <p class="yn-blod-big"><b><u>Y</u></b>ummy <b><u>O</u></b>ptimal <b><u>M</u></b>icronutrient
-                              <b><u>Z</u></b>upplements
-                           </p>
-
-                           <div class="yomz-btn">
-                              <a href="#try-yomz" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i></a>
-                           </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-6 p-0">
-               <div class="banner-img">
-                  <img src="images/bannerimage.jpg" class="img-fluid">
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="container">
-         <div class="row reviews-top">
-            <div class="col-md-4">
-               <div class="reviews-thumb">
-                  <!-- Review - 01 -->
-                  <div class="left-with-image d-flex gap-2 align-items-center">
-                     <img src="images/face-1.jpg">
-                     <span>Diana A.</span>
-                     <div class="featured-image-with-text__text--caption-review-star">
-                        <img src="images/red-star.png">
-                     </div>
-                  </div>
-                  <p>I can't believe how good these gummies taste. My kids are suddenly not so picky. I threw out all
-                     their kids vitamins because all they want is YOMZ. So glad you created this!</p>
-               </div>
-            </div>
-
-            <!-- Review - 02 -->
-            <div class="col-md-4">
-               <div class="reviews-thumb">
-                  <div class="left-with-image d-flex gap-2 align-items-center">
-                     <img src="images/face-2.jpg"> <span>Sarabeth S.</span>
-                     <div class="featured-image-with-text__text--caption-review-star">
-                        <img src="images/red-star.png">
-                     </div>
-                  </div>
-                  <p>My kids love the flavors of YOMZ. So do mommy and daddy! Finally, family wellness tastes
-                     gummy-licious.</p>
-               </div>
-            </div>
-
-            <!-- Review - 03 -->
-            <div class="col-md-4">
-               <div class="reviews-thumb">
-                  <div class="left-with-image d-flex gap-2 align-items-center">
-                     <img src="images/face-3.jpg"> <span>Wilma K.</span>
-                     <div class="featured-image-with-text__text--caption-review-star">
-                        <img src="images/red-star.png">
-                     </div>
-                  </div>
-                  <p>"My daughter loves these—she even prefers it over her favorite candy. And she hasn't had tummy
-                     issues since we started YOMZ. She gives it 2 👍 + 5 ⭐!"</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- Banner -->
-
-   <!-- marquee -->
-   <div class="marquee_section">
-      <div class="marquee">
-         <div class="marquee_track">
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-
-         </div>
-      </div>
-   </div>
-   <!-- marquee -->
-
-   <!-- modern -->
-   <div class="modern wish-top">
-      <div class="container ">
-         <div class="row">
-            <div class="col-md-5 mx-auto">
-               <div class="section_heading section_heading1 featured-video-with-text_heading text-center">
-                  <div class="yomzBtn yomzBtnUpdated">YOMZ</div>
-                  <h2 class="title inline-richtext whtveggie">
-                     What Veggies <i><u>Wish</u></i> <br> They Tasted Like!
-                  </h2>
-                  <div class="text mt-2 featur-listdone">
-
-                     <div class="col d-flex align-items-start">
-                        <div class="icon-square flex-shrink-0 me-2"><img src="images/lolipop.png" class="img-fluid">
-                        </div>
-                        <div>
-                           <p>So <b>yummy,</b> you’ll forget it’s good for you</p>
-                        </div>
-                     </div>
-                     <div class="col d-flex align-items-start">
-                        <div class="icon-square flex-shrink-0 me-2"><img src="images/roots.png" class="img-fluid"></div>
-                        <div>
-                           <p>Real fruit power for a <b>natural</b> boost</p>
-                        </div>
-                     </div>
-                     <div class="col d-flex align-items-start">
-                        <div class="icon-square flex-shrink-0 me-2"><img src="images/house.png" class="img-fluid"></div>
-                        <div>
-                           <p>For the <b>whole</b> family, even the picky one</p>
-                        </div>
-                     </div>
-                     <div class="col d-flex align-items-start">
-                        <div class="icon-square flex-shrink-0 me-2"><img src="images/rocket.png" class="img-fluid">
-                        </div>
-                        <div>
-                           <p><b>Potent,</b> pocket-sized snack packs</p>
-                        </div>
-                     </div>
-                     <div class="col d-flex align-items-start mb-2">
-                        <div class="icon-square flex-shrink-0 me-3"><img src="images/check-box.png" class="img-fluid">
-                        </div>
-                        <div>
-                           <p>No junk, just <b>joy</b></p>
-                        </div>
-                     </div>
-
-                     <p class="font400">
-                        YOMZ is packed with <b>vitamins</b> and micronutrients...
-                        with the phytonutrient equivalent of <b>3 combined fruit & veggie servings.</b><br>
-                        <i><strong>So what,</strong> you say?</i>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row section_heading manage-hare">
-            <div class="col-md-11 mx-auto">
-               <div class="row">
-                  <div class="col-md-6 d-flex align-items-center p-0 mx-auto">
-                     <div class="video-right-content">
-                        <h2 class="mb-3">Here’s What:</h2>
-
-                        <div class="video-right-date d-flex align-items-top gap-3 mb-3">
-                           <div class="left">
-                              <span>🍓</span>
-                           </div>
-                           <div class="right">
-                              <h4><strong> Phytonutrients Matter</strong></h4>
-                              <p>Let’s be real. You’re not eating kale chips while skipping through a farmer’s market.
-                              </p>
-                              <p>No, you’re hustling through school drop-offs, working late, bribing kids to eat “just
-                                 one carrot”...</p>
-                              <p>And surviving on caffeine and whatever’s not expired in the fridge.</p>
-                           </div>
-                        </div>
-
-                        <div class="video-right-date d-flex align-items-top gap-3 mb-3">
-                           <div class="left">
-                              <span><img src="images/o.png" class="img-fluid"> </span>
-                           </div>
-                           <div class="right">
-                              <h4><strong>That’s why there’s YOMZ</strong></h4>
-                              <p>It packs the plant-powered punch of <strong>3 servings</strong> of fruits and veggies…
-                              </p>
-                              <p>Loaded with phytonutrients your body <i><u>craves</u></i> (even if your taste buds say
-                                 otherwise).</p>
-                              <p>No whining. No bribery. No blender explosions.</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <p class="text-center pragep-pro">* These statements have not been evaluated by the Food and Drug
-            Administration.<br>This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
-      </div>
-   </div>
-   <!-- modern -->
-
-   <!-- Drinks -->
-   <div class="wave-section wave-section--secondary wave-section--direction-top">
-      <style>
-         .wave-section {
-            --color-background: 255, 202, 18;
-            width: 100%;
-            overflow: hidden;
-         }
-
-         .wave-section svg {
-            display: block;
-            width: 100%;
-            height: auto;
-         }
-      </style>
-      <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" height="44" viewBox="0 0 1728 44"
-         fill="none">
-         <path
-            d="M39.344 44C270.944 44 271.484 17.8692 502.03 17.7511C732.581 17.8692 733.118 44 964.719 44C965.248 44 965.768 43.9978 966.292 43.9978C966.817 43.9978 967.336 44 967.866 44C1196.84 43.7594 1197.91 17.7489 1428.98 17.7489C1587.71 17.7489 1637.9 30.0235 1727.99 37.785L1728 0.0525003C1641 0.0525003 1587.71 0.0525003 1428.98 0.0525003C1197.91 0.0525003 1196.85 0.293202 967.873 0.0547547C967.343 0.0525671 966.824 0.0547547 966.299 0.0547547C965.775 0.0547547 965.255 0.0525003 964.725 0.0525003C733.125 0.0525003 732.59 -0.0656298 502.039 0.0525003C271.494 -0.0656298 262.444 0.0525003 30.844 0.0525003C16.9267 0.0525003 12.5 0.326006 0.156494 0.505389L0 43.7266C12.3435 43.9059 25.4267 44 39.344 44Z"
-            fill="#FFEB00"></path>
-      </svg>
-   </div>
-   <div class="frink-srction">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-5 mx-auto">
-               <div class="section_heading">
-                  <div class="yomzBtn yomzBtnUpdated">YOMZ</div>
-                  <h2 class="title-h1 whatsin">
-                     <span class="icon-whisker_text "></span>
-                     What’s in It <br>
-                     <span class="underline-black">for You?</span>
-                  </h2>
-               </div>
-            </div>
-         </div>
-
-         <!-- what's in it for you section -->
-         <div class="row">
-            <div class="col-md-12 mx-auto">
-               <div class="list-drinks-details d-flex justify-content-center qualities-Img">
-                  <div class="div-1">
-                     <img src="images/general-wellness-immunity.png">
-                     <p>General Wellness & Immunity</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/energy-metabolism.png">
-                     <p>Energy & Metabolism</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/bone-joint-health.png">
-                     <p>Bone & Joint Health</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/heart-circulatory-health.png">
-                     <p>Heart & Circulatory Health</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/digestive-gut-health.png">
-                     <p>Digestive & Gut Health</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/vision-focus-brain-health.png">
-                     <p>Vision, Focus, & Brain Health</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/antioxidant-antiinflammatory-support.png">
-                     <p>Antioxidant & Anti-Inflammatory Support</p>
-                  </div>
-                  <div class="div-1">
-                     <img src="images/skin-hair-nail-health.png">
-                     <p>Skin, Hair, & Nail Health</p>
-                  </div>
-               </div>
-               <p class="drinks-text">*These statements have not been evaluated by the Food and Drug Administration.
-                  This product
-                  is not intended to diagnose, treat, cure, or prevent any disease.</p>
-            </div>
-         </div>
-         <!-- what's in it for you section -->
-
-      </div>
-   </div>
-   <!-- Drinks -->
-
-   <!--anytime-->
-   <div id="section-wave-template--17951666864320__wave_section_HHBeQJ"
-      class="wave-section wave-section--primary wave-section--direction-top">
-      <style data-shopify="">
-         #section-wave-template--17951666864320__wave_section_HHBeQJ {
-            --color-background: 255, 241, 191;
-         }
-      </style>
-      <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="71" viewBox="0 0 1728 71" fill="none">
-         <path
-            d="M1728 71V37.5774C1633.13 42.5912 1518.87 46.0713 1361.23 46.1281C789.616 45.9236 788.289 0.689697 214.078 0.689697C212.764 0.689697 211.477 0.693484 210.176 0.693484C208.876 0.693484 207.588 0.689697 206.274 0.689697C130.864 0.7465 58.1377 1.59097 0 3.00725V71H1728Z"
-            fill="#fff"></path>
-      </svg>
-   </div>
-   <!-- <div class="anytime">
-      <div class="container">
-         <div class="row d-flex align-items-center">
-            <div class="col-md-7 p-0">
-               <img src="images/products-1.webp" class="img-fluid">
-            </div>
-            <div class="col-md-5 p-0">
-               <div class="anytime-data">
-                  <span class="slt">THE SOLUTION</span>
-                  <h2 class="featured-product-detail__heading inline-richtext h1">
-                     <span class="icon-whisker_text">
-                        <svg width="31" height="35" viewBox="0 0 31 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M27.7766 9.85613C27.6572 8.58696 27.5502 7.33037 27.3938 6.06534C27.3612 5.79306 27.1154 5.60074 26.845 5.63403C26.5727 5.66667 26.3797 5.91432 26.413 6.18472C26.5675 7.44286 26.6739 8.68879 26.7922 9.94919C26.8186 10.2214 27.0599 10.4207 27.3297 10.3955C27.6019 10.3691 27.803 10.1284 27.7766 9.85613Z"
-                              fill="black" stroke="black" stroke-width="2"></path>
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M19.1755 15.9532C16.2582 13.1756 13.2023 10.5471 10.2276 7.83357C10.0249 7.64964 9.71273 7.66452 9.52943 7.86536C9.34549 8.06807 9.35852 8.37959 9.56059 8.5654C12.5309 11.2733 15.5825 13.896 18.4929 16.6692C18.6919 16.8582 19.004 16.8496 19.1923 16.6525C19.3812 16.4536 19.3726 16.1415 19.1755 15.9532Z"
-                              fill="black" stroke="black" stroke-width="2"></path>
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M13.6059 29.3651C10.2491 28.7924 6.87102 28.3129 3.52069 27.7028C3.25268 27.6554 2.99576 27.8332 2.94651 28.1006C2.89661 28.3698 3.07631 28.6274 3.34369 28.6766C6.6984 29.2861 10.0802 29.767 13.4414 30.339C13.7101 30.3845 13.9658 30.2042 14.0113 29.9356C14.0575 29.665 13.8764 29.4112 13.6059 29.3651Z"
-                              fill="black" stroke="black" stroke-width="2"></path>
-                        </svg>
-                        Anytime Drink FOR
-                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M5.32099 7.67236C6.42933 5.80386 7.28214 3.76519 8.09399 1.78341C8.26735 1.35617 8.07077 0.863695 7.64736 0.716409C7.2321 0.537468 6.75222 0.747438 6.58732 1.14312C5.80217 3.06438 4.98248 5.04386 3.92066 6.82331C3.69231 7.20199 3.81755 7.70944 4.20295 7.94805C4.58803 8.18658 5.09232 8.05095 5.32099 7.67236Z"
-                              fill="black" stroke="black"></path>
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M11.7187 15.9504C15.9082 13.5879 19.7805 10.7005 24.0421 8.42502C24.4364 8.22616 24.5888 7.72563 24.3763 7.33034C24.1636 6.93497 23.6719 6.76953 23.2691 6.99996C18.9977 9.27284 15.1159 12.1576 10.9167 14.5175C10.5214 14.75 10.3817 15.2538 10.6027 15.6513C10.8319 16.0173 11.3235 16.1828 11.7187 15.9504Z"
-                              fill="black" stroke="black"></path>
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M22.849 25.4635C20.9245 25.0493 18.9999 24.6349 17.0751 24.2206C16.64 24.1041 16.2026 24.3931 16.1053 24.8407C16.0083 25.2884 16.2941 25.7032 16.7294 25.8198C18.6572 26.2348 20.5845 26.65 22.5119 27.0649C22.9554 27.1499 23.3906 26.8604 23.4854 26.4121C23.5717 25.9954 23.2922 25.5484 22.849 25.4635Z"
-                              fill="black" stroke="black"></path>
-                        </svg>
-                     </span>
-                     GROWING SUPERHEROES
-                  </h2>
-                  <p>Flavors so good, your kids will ask for it again and again! Ditch the juice boxes and try us risk
-                     free!</p>
-                  <div class="list-drinks-details d-flex justify-content-start">
-                     <div class="div-1">
-                        <img src="images/product-Icon-1.svg">
-                        <p>IMMUNE<br>SUPPORT*</p>
-                     </div>
-                     <div class="div-1">
-                        <img src="images/product-Icon-2.svg">
-                        <p>BRAIN<br>FUNCTION*</p>
-                     </div>
-                     <div class="div-1">
-                        <img src="images/product-Icon-3.svg">
-                        <p>MUSCLE<br>GROWTH*</p>
-                     </div>
-                     <div class="div-1">
-                        <img src="images/product-Icon-4.svg">
-                        <p>STRONG<br>BONES*</p>
-                     </div>
-                  </div>
-                  <div class="button-wrapper button-wrapper-button">
-                     <style data-shopify="">
-                        .button-wrapper-button {
-                           --button-bg-color: #FFCA12;
-                           --button-text-color: #000000;
-                           --button-icon-color: #000000;
-                        }
-                     </style>
-                     <a href="#" class="button button--primary ">
-                        <span class="button-icon-bolt">
-                           <svg width="32" height="11" viewBox="0 0 32 11" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                 d="M0.12967 7.22749L3.99037 6.60111C4.0663 6.58857 4.1311 6.66067 4.11756 6.74216L3.48693 10.6154C3.47242 10.7047 3.55028 10.7789 3.63056 10.7522L14.2483 7.21599C14.3069 7.19666 14.3692 7.23114 14.3881 7.29436L15.4143 10.7073C15.4347 10.7752 15.5048 10.8092 15.5652 10.7815L23.232 7.25152C23.289 7.2254 23.3553 7.25413 23.3795 7.31578L24.5547 10.3066C24.5818 10.3756 24.6596 10.4017 24.7181 10.362L31.9472 5.43456C32.0512 5.36351 31.9893 5.18954 31.8679 5.21253L26.6545 6.1931C26.5873 6.20564 26.5254 6.15131 26.523 6.07817L26.3779 1.92444C26.375 1.84243 26.2996 1.78705 26.228 1.81474L17.9112 4.99468C17.8605 5.01401 17.8039 4.99155 17.7768 4.9414L15.4671 0.648705C15.4361 0.591239 15.3684 0.571388 15.3147 0.603777L7.00958 5.64404C6.9293 5.69263 6.83161 5.6221 6.84322 5.52284L7.17401 2.70337C7.18562 2.60359 7.086 2.53254 7.00571 2.58373L0.0556765 7.00337C-0.0507189 7.07128 0.00731499 7.24786 0.129186 7.22801L0.12967 7.22749Z"
-                                 fill="var(--button-icon-color)"></path>
-                           </svg>
-                        </span>
-                        <span class="button-label">SHOP ANYTIME</span>
-                        <span class="button-icon-bolt">
-                           <svg width="32" height="11" viewBox="0 0 32 11" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                 d="M0.12967 7.22749L3.99037 6.60111C4.0663 6.58857 4.1311 6.66067 4.11756 6.74216L3.48693 10.6154C3.47242 10.7047 3.55028 10.7789 3.63056 10.7522L14.2483 7.21599C14.3069 7.19666 14.3692 7.23114 14.3881 7.29436L15.4143 10.7073C15.4347 10.7752 15.5048 10.8092 15.5652 10.7815L23.232 7.25152C23.289 7.2254 23.3553 7.25413 23.3795 7.31578L24.5547 10.3066C24.5818 10.3756 24.6596 10.4017 24.7181 10.362L31.9472 5.43456C32.0512 5.36351 31.9893 5.18954 31.8679 5.21253L26.6545 6.1931C26.5873 6.20564 26.5254 6.15131 26.523 6.07817L26.3779 1.92444C26.375 1.84243 26.2996 1.78705 26.228 1.81474L17.9112 4.99468C17.8605 5.01401 17.8039 4.99155 17.7768 4.9414L15.4671 0.648705C15.4361 0.591239 15.3684 0.571388 15.3147 0.603777L7.00958 5.64404C6.9293 5.69263 6.83161 5.6221 6.84322 5.52284L7.17401 2.70337C7.18562 2.60359 7.086 2.53254 7.00571 2.58373L0.0556765 7.00337C-0.0507189 7.07128 0.00731499 7.24786 0.129186 7.22801L0.12967 7.22749Z"
-                                 fill="var(--button-icon-color)"></path>
-                           </svg>
-                        </span>
-                     </a>
-
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
-   <!--anytime -->
-
-   <!--everyday-->
-   <!-- <div class="everyday">
-      <div class="container">
-         <div class="featured-bar">
-            <div class="row d-flex align-items-center">
-               <div class="col-md-6">
-                  <div class="titles">
-                     <h3>How Anytime Helps Your Kids Everyday!</h3>
-                     <p>* These statements have not been evaluated by the Food and Drug Administration. This product is
-                        not intended to diagnose, treat, cure, or prevent any disease.</p>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="featured-bar">
-                     <ul>
-                        <li><strong>Improve Mood*</strong></li>
-                        <li><strong>Enhance Focus*</strong></li>
-                        <li><strong>Support Metabolism*</strong></li>
-                        <li><strong>Cellular Health*</strong></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="featured-bar">
-                     <ul>
-                        <li><strong>Improve Endurance*</strong></li>
-                        <li><strong>Increase Water*</strong></li>
-                        <li><strong>Strong Bones*</strong></li>
-                        <li><strong>Protect Immunity*</strong></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
-   <!--everyday-->
-
-   <!--video-->
-   <div class="video-section">
-      <div class="container">
-         <div class="row">
-            <div class="section_heading featured-video-column_heading text-center">
-               <div class="yomzBtn">How do people like YOMZ?</div>
-               <h2 class="title inline-richtext h1 realText families">
-                  Real Families. <span class="mobile-dblock">Real Talk.</span>
-               </h2>
-            </div>
-         </div>
-         <div class="reviews-section">
+            <div class="toaster-cross" id="toaster-cross"> <img alt="toaster-cross" width="40"> </div>
+        </div>
+    </div> <!-- Topbaar -->
+    <div class="topbaar">
+        <div class="container">
             <div class="row">
-               <div class="col-md-4">
-                  <div class="featured-review-columns-card">
-                     <div class="featured-review-columns-card__content">
-                        <div class="featured-review-columns-card__reviews">
-                           <img src="images/red-star.png" class="icons-star">
-                        </div>
-                        <div class="featured-review-columns-card__text">
-                           <p>“My daughter thinks they’re candy. I know they’re full of nutrients. Win-win.”</p>
-                        </div>
-                     </div>
-                     <div class="featured-review-columns-card__info">
-                        <div class="author-image-info">
-                           <div class="author-image">
-                              <img src="images/face-4.jpg" loading="lazy" class="author-image__image">
-                           </div>
-                           <div class="author-title_info">
-                              <h3 class="author-title">Jessie M.</h3>
-                              <div class="author-info">Mom of 2 picky eaters</div>
-                           </div>
-                        </div>
-                        <div class="author-product-image">
-                           <img src="images/red-gummy.png" width="300" height="300" loading="lazy"
-                              class="author-product-image__image">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-md-4">
-                  <div class="featured-review-columns-card">
-                     <div class="featured-review-columns-card__content">
-                        <div class="featured-review-columns-card__reviews">
-                           <img src="images/red-star.png" class="icons-star">
-                        </div>
-                        <div class="featured-review-columns-card__text">
-                           <p>“I love them too. Way more fun than horse pills or greens powders and better for me than
-                              cold pizza.”</p>
-                        </div>
-                     </div>
-                     <div class="featured-review-columns-card__info">
-                        <div class="author-image-info">
-                           <div class="author-image">
-                              <img src="images/face-5.jpg" loading="lazy" class="author-image__image">
-                           </div>
-                           <div class="author-title_info">
-                              <h3 class="author-title">Marcus R.</h3>
-                              <div class="author-info">Dad & late-night snacker</div>
-                           </div>
-                        </div>
-                        <div class="author-product-image">
-                           <img src="images/red-gummy.png" width="300" height="300" loading="lazy"
-                              class="author-product-image__image">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-md-4">
-                  <div class="featured-review-columns-card">
-                     <div class="featured-review-columns-card__content">
-                        <div class="featured-review-columns-card__reviews">
-                           <img src="images/red-star.png" class="icons-star">
-                        </div>
-                        <div class="featured-review-columns-card__text">
-                           <p>“My son’s teacher asked what we changed—he’s more focused and less tired. It’s these
-                              gummies.”</p>
-                        </div>
-                     </div>
-                     <div class="featured-review-columns-card__info">
-                        <div class="author-image-info">
-                           <div class="author-image">
-                              <img src="images/face-6.jpg" loading="lazy" class="author-image__image">
-                           </div>
-                           <div class="author-title_info">
-                              <h3 class="author-title">Lena S.</h3>
-                              <div class="author-info">Parent of a 6-year-old</div>
-                           </div>
-                        </div>
-                        <div class="author-product-image">
-                           <img src="images/red-gummy.png" width="300" height="300" loading="lazy"
-                              class="author-product-image__image">
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                <p class="text-center"><span class="join-span">WANT $100K? Tap for details</span></p>
             </div>
-         </div>
-      </div>
-   </div>
-   <!--video-->
-
-   <!--effect-->
-   <div class="anytime effect">
-      <div class="container">
-         <div class="row section_heading d-flex align-items-center">
-            <div class="col-md-6 p-0">
-               <div class="anytime-data candyWith-Text text-left">
-                  <div class="alignCen">
-                     <span class="yomzBtn yomzBtnUpdated">Why YOMZ Is the BOMBZ</span>
-                  </div>
-                  <h2 class="featured-product-detail__heading inline-richtext h1 text-left cabdy-text">
-                     <span class="icon-whisker_text ">
-
-                     </span>
-                     Candy.<br> With Benefits.
-                  </h2>
-
-                  <p class="mt-2 mobile-cebnter">YOMZ is not just another gummy...
-                     <span class="d-block">It’s a <strong>game-changer.</strong></span>
-                     Each bite <strong>explodes</strong> with flavor and is
-                     <strong>packed</strong> with PhytoServ® and NatureKnit™,
-                     our <strong>powerhouse</strong> ingredient blends stacked
-                     with antioxidants, polyphenols, and
-                     phytonutrients.
-                  </p>
-
-                  <p class="mobile-cebnter">Translation?
-                     <span class="d-block">You get the nutrition of <strong>real</strong> fruits & veggies
-                        in the <strong>tastiest</strong> gummy on Earth.</span>
-                     <i>That’s the magic of YOMZ!</i>
-                  </p>
-
-                  <div class="yomz-btn"><a href="#try-yomz" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
-                           aria-hidden="true"></i></a></div>
-               </div>
+        </div>
+    </div> <!-- Topbaar --> <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="d-flex hd-head flex-wrap align-items-center justify-content-between py-2 mb-0">
+                <ul class="nav d-none d-lg-flex col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a id="home-header" class="nav-link px-2 link-dark">Home</a></li>
+                    <li><a id="about-header" class="nav-link px-2 link-dark">About</a></li>
+                    <li><a id="oggummies-header" class="nav-link px-2 link-dark">OG Gummies</a></li>
+                    <li><a id="sours-header" class="nav-link px-2 link-dark">Sours</a></li>
+                </ul> <button class="btn d-lg-none" id="menu-toggle" aria-label="Toggle menu"> <i class="fa fa-bars"
+                        aria-hidden="true"
+                        style="font-size: 31px; color: #FFEB00; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;"></i>
+                </button> <a id="yomzLogo2"
+                    class="d-flex logo-md-spce justify-content-center align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="images/logo.png" alt="logo-img" class="img-fluid logo-img"> </a>
+                <div class="col-md-3 text-end manage-help-icons">
+                    <ul class="nav mb-0 justify-content-center mb-md-0 d-flex align-items-center">
+                        <li><a href="#" class="nav-link px-2 link-dark d-none d-lg-flex col-md-auto">Contact</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark"> <img src="images/user-icon.png"
+                                    alt="userIcon-img"></a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark"> <img src="images/store-icon.png"
+                                    alt="storeIcon-img"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6 p-0">
-               <img src="images/benefits.jpg" class="img-fluid">
+        </div> <!-- Sidebar -->
+        <div id="mobile-sidebar" class="sidebar d-lg-none"> <button class="close-btn"
+                id="close-sidebar">&times;</button>
+            <ul class="nav flex-column">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="ogGummiesProduct" class="nav-link">OG Gummies</a></li>
+                <li><a href="soursProduct" class="nav-link">Sours</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <p class="text-uppercase">socials</p>
+                <ul>
+                    <li><a href="#"><img src="images/facebook.png" alt="facebookLogo-img"></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt="instagramLogo-img"></a></li>
+                    <li><a href="#"><img src="images/tik-tok.png" alt="tiktok-img"></a></li>
+                    <li><a href="#"><img src="images/pinterest.png" alt="pinterest-img"></a></li>
+                </ul>
             </div>
-         </div>
-      </div>
-   </div>
-   <!--effect -->
-
-   <!-- modern -->
-   <div class="modern official">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-7 mx-auto">
-               <div class="section_heading featured-video-with-text_heading text-center zupplement-mb1">
-                  <div class="yomzBtn yomzBtnUpdated">YOMZ:</div>
-                  <h2 class="title inline-richtext zupplement">
-                     Official Gummy Zupplement of<span class="underline">Like Nastya</span>
-                  </h2>
-
-                  <div class="text">
-                     <p><i>The world’s biggest kid YouTuber</i></p>
-                  </div>
-               </div>
+        </div>
+    </header> <!-- Header --> <!-- Banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="banner-content">
+                        <div
+                            class="featured-image-with-text__text featured-image-with-text__text--caption has-rating review_text review_text--large review_text">
+                            <div class="featured-image-with-text__text--caption-review-star"> <img
+                                    src="images/red-star.png" alt="redStar-img"> </div> <strong> 1000s of happy
+                                families!</strong>
+                        </div>
+                        <div class="sec-content">
+                            <h1> <span class="left-heading"> Nomz. Nomz. Nomz. </span>
+                                <div class="smsize"> <span>That’s the sound of YOMZ!</span> </div>
+                            </h1>
+                            <p> It’s <strong>love</strong> at first taste + whole-body<br> <strong>wellness.</strong>
+                                For the entire family.<br> So get your <strong>nomz</strong> on.<br> And supercharge
+                                your day <br> the <strong>YOMZ</strong> way. </p>
+                            <div class="list-done featured-image-with-text__text">
+                                <ul>
+                                    <li>Prebiotic Fiber Source</li>
+                                    <li>Keto-friendly</li>
+                                    <li>Gluten-free</li>
+                                    <li>Non-GMO</li>
+                                    <li>Vegan</li>
+                                </ul>
+                            </div>
+                            <h2 class="yomz-heading"> YOMZ. <h2>
+                                    <p class="yn-blod-big"><b><u>Y</u></b>ummy <b><u>O</u></b>ptimal
+                                        <b><u>M</u></b>icronutrient <b><u>Z</u></b>upplements </p>
+                                    <div class="yomz-btn"> <a href="#try-yomz" class="btn">Try YOMZ <i
+                                                class="fa fa-long-arrow-right" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="banner-img"> <img src="images/bannerimage.jpg" alt="banner-image" class="img-fluid">
+                    </div>
+                </div>
             </div>
-         </div>
-
-         <div class="row modern-data">
-            <div class="col-md-12 text-center">
-               <p>If there’s one thing Nastya knows, it’s how to make life <strong>fun.</strong></p>
-               <p>And <strong>YOMZ</strong> fits right in!</p>
-               <p>This superstar loves how <strong>yummy</strong> they taste, but that’s not all…</p>
-               <p>It <strong>fuels</strong> her daily to help keep her <strong>strong</strong> and ready for every
-                  adventure.</p>
-               <p>Whether she’s playing, learning, or having fun with friends and family…</p>
-               <p>YOMZ is her go-to for a yummy <strong>boost.</strong></p>
-               <p>Follow Nastya and make snack time great again!</p>
-               <div class="yomz-btn"><a href="#" class="btn">Watch Nastya’s YOMZ Story <i class="fa fa-long-arrow-right"
-                        aria-hidden="true"></i></a></div>
-
+        </div>
+        <div class="container">
+            <div class="row reviews-top">
+                <div class="col-md-4">
+                    <div class="reviews-thumb"> <!-- Review - 01 -->
+                        <div class="left-with-image d-flex gap-2 align-items-center"> <img src="images/face-1.jpg"
+                                alt="face-1-Img"> <span>Diana A.</span>
+                            <div class="featured-image-with-text__text--caption-review-star"> <img
+                                    src="images/red-star.png" alt="redStar-img"> </div>
+                        </div>
+                        <p>I can't believe how good these gummies taste. My kids are suddenly not so picky. I threw out
+                            all their kids vitamins because all they want is YOMZ. So glad you created this! </p>
+                    </div>
+                </div> <!-- Review - 02 -->
+                <div class="col-md-4">
+                    <div class="reviews-thumb">
+                        <div class="left-with-image d-flex gap-2 align-items-center"> <img src="images/face-2.jpg"
+                                alt="face2-img"> <span>Sarabeth S.</span>
+                            <div class="featured-image-with-text__text--caption-review-star"> <img
+                                    src="images/red-star.png" alt="redStar-img"> </div>
+                        </div>
+                        <p>My kids love the flavors of YOMZ. So do mommy and daddy! Finally, family wellness tastes
+                            gummy-licious. </p>
+                    </div>
+                </div> <!-- Review - 03 -->
+                <div class="col-md-4">
+                    <div class="reviews-thumb">
+                        <div class="left-with-image d-flex gap-2 align-items-center"> <img src="images/face-3.jpg"
+                                alt="face3-img"> <span>Wilma K.</span>
+                            <div class="featured-image-with-text__text--caption-review-star"> <img
+                                    src="images/red-star.png" alt="redStar-img"> </div>
+                        </div>
+                        <p>"My daughter loves these—she even prefers it over her favorite candy. And she hasn't had
+                            tummy issues since we started YOMZ. She gives it 2 👍 + 5 ⭐!" </p>
+                    </div>
+                </div>
             </div>
-         </div>
-
-      </div>
-   </div>
-   <!-- modern -->
-
-   <!-- Doctor-Approved Goodness -->
-   <div class="doctor-approved">
-      <div class="container">
-         <div class="row">
-            <div class="section_heading featured-video-column_heading text-center">
-               <div class="yomzBtn yomzBtnUpdated">YOMZ</div>
-               <h2 class="title inline-richtext h1 realText doctor">
-                  Doctor-Approved Goodness
-               </h2>
+        </div>
+    </div> <!-- Banner --> <!-- marquee -->
+    <div class="marquee_section">
+        <div class="marquee">
+            <div class="marquee_track">
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6 mx-auto text-center">
-               <div class="testi-qot">
-                  <p> <i class="fa fa-quote-left" aria-hidden="true"></i> “Wellness doesn’t have to be boring! Or taste
-                     awful. That’s why I support YOMZ. It’s crafted with clinically-backed ingredients from top
-                     nutrition experts. Perfect for families looking to bridge nutrition gaps. Plus it tastes great -
-                     you won’t believe your tongue!”</p>
-                  <p><strong>— Dr. I. Feelgood</strong> Duke-trained M.D.</p>
-               </div>
+        </div>
+    </div> <!-- marquee --> <!-- modern -->
+    <div class="modern wish-top">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="section_heading section_heading1 featured-video-with-text_heading text-center">
+                        <div class="yomzBtn yomzBtnUpdated">YOMZ</div>
+                        <h2 class="title inline-richtext whtveggie"> What Veggies <i><u>Wish</u></i> <br> They Tasted
+                            Like! </h2>
+                        <div class="row">
+                            <div class="col-md-7 mx-auto">
+                                <div class="text mt-2 featur-listdone">
+                                    <div class="col d-flex align-items-start">
+                                        <div class="icon-square flex-shrink-0 me-2"><img src="images/lolipop.png"
+                                                alt="lolipop-img" class="img-fluid"> </div>
+                                        <div>
+                                            <p>So <b>yummy,</b> you’ll forget it’s good for you</p>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex align-items-start">
+                                        <div class="icon-square flex-shrink-0 me-2"><img src="images/roots.png"
+                                                alt="roots-img" class="img-fluid"></div>
+                                        <div>
+                                            <p>Real fruit power for a <b>natural</b> boost</p>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex align-items-start">
+                                        <div class="icon-square flex-shrink-0 me-2"><img src="images/house.png"
+                                                alt="house-img" class="img-fluid"></div>
+                                        <div>
+                                            <p>For the <b>whole</b> family, even the picky one</p>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex align-items-start">
+                                        <div class="icon-square flex-shrink-0 me-2"><img src="images/rocket.png"
+                                                alt="rocket-img" class="img-fluid"> </div>
+                                        <div>
+                                            <p><b>Potent,</b> pocket-sized snack packs</p>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex align-items-start mb-2">
+                                        <div class="icon-square flex-shrink-0 me-3"><img src="images/check-box.png"
+                                                alt="checkBox-img" class="img-fluid"> </div>
+                                        <div>
+                                            <p>No junk, just <b>joy</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <p class="font400"> YOMZ is packed with <b>vitamins</b> and micronutrients... with the
+                                    phytonutrient equivalent of <b>3 combined fruit & veggie servings.</b><br>
+                                    <i><strong>So what,</strong> you say?</i> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="row text-center">
-            <h3>YOMZ.</h3>
-            <p>Science-backed. Kid-loved. Doctor-approved. Parent-supported.<br>
-               What’s not to love?</p>
-         </div>
-      </div>
-   </div>
-   <!-- Doctor-Approved Goodness -->
-
-   <!-- products -->
-   <section id="shopify-section-template--17951666864320__wave_section_xGqXdD"
-      class="shopify-section featured-wave-section">
-      <div id="section-wave-template--17951666864320__wave_section_xGqXdD"
-         class="wave-section wave-section--secondary wave-section--direction-top">
-         <style data-shopify="">
-            #section-wave-template--17951666864320__wave_section_xGqXdD {
-
-               --color-background: 236, 232, 255;
+            <div class="row section_heading manage-hare">
+                <div class="col-md-11 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-center p-0 mx-auto">
+                            <div class="video-right-content">
+                                <h2 class="mb-3">Here’s What:</h2>
+                                <div class="video-right-date d-flex align-items-top gap-3 mb-3">
+                                    <div class="left"> <span>🍓</span> </div>
+                                    <div class="right">
+                                        <h4><strong> Phytonutrients Matter</strong></h4>
+                                        <p>Let’s be real. You’re not eating kale chips while skipping through a farmer’s
+                                            market. </p>
+                                        <p>No, you’re hustling through school drop-offs, working late, bribing kids to
+                                            eat “just one carrot”... </p>
+                                        <p>And surviving on caffeine and whatever’s not expired in the fridge.</p>
+                                    </div>
+                                </div>
+                                <div class="video-right-date d-flex align-items-top gap-3 mb-3">
+                                    <div class="left"> <span><img src="images/o.png" alt="teddy-small-logo"
+                                                class="img-fluid"> </span> </div>
+                                    <div class="right">
+                                        <h4><strong>That’s why there’s YOMZ</strong></h4>
+                                        <p>It packs the plant-powered punch of <strong>3 servings</strong> of fruits and
+                                            veggies… </p>
+                                        <p>Loaded with phytonutrients your body <i><u>craves</u></i> (even if your taste
+                                            buds say otherwise). </p>
+                                        <p>No whining. No bribery. No blender explosions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center pragep-pro">* These statements have not been evaluated by the Food and Drug
+                Administration.<br>This product is not intended to diagnose, treat, cure, or prevent any disease. </p>
+        </div>
+    </div> <!-- modern --> <!-- Drinks -->
+    <div class="wave-section wave-section--secondary wave-section--direction-top">
+        <style>
+            .wave-section {
+                --color-background: 255, 202, 18;
+                width: 100%;
+                overflow: hidden;
             }
-         </style>
-         <svg style="transform:rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="1728" height="44"
+
+            .wave-section svg {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        </style> <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" height="44"
             viewBox="0 0 1728 44" fill="none">
             <path
-               d="M39.344 44C270.944 44 271.484 17.8692 502.03 17.7511C732.581 17.8692 733.118 44 964.719 44C965.248 44 965.768 43.9978 966.292 43.9978C966.817 43.9978 967.336 44 967.866 44C1196.84 43.7594 1197.91 17.7489 1428.98 17.7489C1587.71 17.7489 1637.9 30.0235 1727.99 37.785L1728 0.0525003C1641 0.0525003 1587.71 0.0525003 1428.98 0.0525003C1197.91 0.0525003 1196.85 0.293202 967.873 0.0547547C967.343 0.0525671 966.824 0.0547547 966.299 0.0547547C965.775 0.0547547 965.255 0.0525003 964.725 0.0525003C733.125 0.0525003 732.59 -0.0656298 502.039 0.0525003C271.494 -0.0656298 262.444 0.0525003 30.844 0.0525003C16.9267 0.0525003 12.5 0.326006 0.156494 0.505389L0 43.7266C12.3435 43.9059 25.4267 44 39.344 44Z"
-               fill="#0AA03C"></path>
-         </svg>
-      </div>
-   </section>
-   <div class="modern products">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-7 mx-auto">
-               <div class="section_heading featured-video-with-text_heading text-center">
-                  <div class="yomzBtn yomzBtnUpdated">SHOP YOMZ</div>
-                  <h2 class="title h1 closes">
-                     Closes Nutrition Gaps <span class="brbrack">without Breaking</span> <span
-                        class="underline underline-blue">the Bank</span>
-                  </h2>
-                  <div class="text">
-                     <p>YOMZ isn't just the tastiest gummy on Earth. It also adds much-needed essential vitamins and
-                        micronutrients to your daily routine. <br>
-                        That’s why we put together a special subscription deal for you. You get the lowest possible
-                        price on YOMZ Gummies so it's easier for you and your family to keep up your daily wellness
-                        routine.</p>
-                  </div>
-               </div>
+                d="M39.344 44C270.944 44 271.484 17.8692 502.03 17.7511C732.581 17.8692 733.118 44 964.719 44C965.248 44 965.768 43.9978 966.292 43.9978C966.817 43.9978 967.336 44 967.866 44C1196.84 43.7594 1197.91 17.7489 1428.98 17.7489C1587.71 17.7489 1637.9 30.0235 1727.99 37.785L1728 0.0525003C1641 0.0525003 1587.71 0.0525003 1428.98 0.0525003C1197.91 0.0525003 1196.85 0.293202 967.873 0.0547547C967.343 0.0525671 966.824 0.0547547 966.299 0.0547547C965.775 0.0547547 965.255 0.0525003 964.725 0.0525003C733.125 0.0525003 732.59 -0.0656298 502.039 0.0525003C271.494 -0.0656298 262.444 0.0525003 30.844 0.0525003C16.9267 0.0525003 12.5 0.326006 0.156494 0.505389L0 43.7266C12.3435 43.9059 25.4267 44 39.344 44Z"
+                fill="#FFEB00"></path>
+        </svg>
+    </div>
+    <div class="frink-srction">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div class="section_heading">
+                        <div class="yomzBtn yomzBtnUpdated">YOMZ</div>
+                        <h2 class="title-h1 whatsin"> <span class="icon-whisker_text "></span> What’s in It <span
+                                class="underline-black">for You?</span> </h2>
+                    </div>
+                </div>
+            </div> <!-- what's in it for you section -->
+            <div class="row managewebbranlogo">
+                <div class="col-md-8 mx-auto">
+                    <div class="d-flex justify-content-center gap-2 mb-2">
+                        <div class="brand-icons"><img src="images/1.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/2.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/3.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/4.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/5.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/6.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/7.png" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="col-md-8 mx-auto">
+                    <div class="d-flex justify-content-center gap-2">
+                        <div class="brand-icons"><img src="images/8.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/9.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/10.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/11.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/12.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/13.png" class="img-fluid"></div>
+                        <div class="brand-icons"><img src="images/14.png" class="img-fluid"></div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div id="try-yomz" class="row justify-content-center">
-            <div class="col-md-4">
-
-               <!-- OG Gummies -->
-               <div class="products-thumbs">
-                  <div class="featured-product-list-card-header">
-                     <h3 class="inline-richtext">OG GUMMIES</h3>
-                  </div>
-                  <img src="images/oggummies.jpg" class="img-fluid">
-                  <div class="featured-product-list-card-info">
-                     <div class="featured-product-list-card-meta">
-                        <h4>SINGLE PACKS</h4>
-                     </div>
-                     <div class="featured-product-list-card-prices"><span class="regular-price">$49.00</span></div>
-                  </div>
-                  <div class="featured-product-list-card-info">
-                     <div class="featured-product-list-card-meta"><span class="unit">60 SERVINGS</span></div>
-                     <div class="featured-product-list-card-prices"><s class="compare-price">$59.00</s></div>
-                  </div>
-                  <div class="featured-product-list-card-footer">
-                     <div class="yomz-btn">
-                        <a id="ogGummiesProduct" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
-                              aria-hidden="true"></i>
-                        </a>
-                     </div>
-                     <div class="under_buttons"><span>1g SUGAR</span><span>CRUCIAL MICRONUTRIENTS</span></div>
-                  </div>
-               </div>
+            <div class="row managemobilebranlogo justify-content-center">
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/1.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/2.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/3.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/4.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/5.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/6.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/7.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/8.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/9.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/10.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/11.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/12.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/13.png" class="img-fluid"></div>
+                </div>
+                <div class="col-3 mb-2">
+                    <div class="brand-icons"><img src="images/14.png" class="img-fluid"></div>
+                </div>
             </div>
-
-            <!-- Yomz Sours -->
-            <div class="col-md-4">
-               <div class="products-thumbs">
-                  <div class="featured-product-list-card-header">
-                     <h3 class="inline-richtext">YOMZ SOURS</h3>
-                  </div>
-                  <img src="images/yomzsours.jpg" class="img-fluid">
-                  <div class="featured-product-list-card-info">
-                     <div class="featured-product-list-card-meta">
-                        <h4>SINGLE PACKS</h4>
-                     </div>
-                     <div class="featured-product-list-card-prices"><span class="regular-price">$39.00</span></div>
-                  </div>
-                  <div class="featured-product-list-card-info">
-                     <div class="featured-product-list-card-meta"><span class="unit">30 SERVINGS</span></div>
-                     <div class="featured-product-list-card-prices"><s class="compare-price">$49.00</s></div>
-                  </div>
-                  <div class="featured-product-list-card-footer plo">
-                     <div class="yomz-btn"><a id="soursProduct" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
-                              aria-hidden="true"></i></a></div>
-                     <div class="under_buttons"><span>1g SUGAR</span><span>CRUCIAL MICRONUTRIENTS</span></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-      </div>
-   </div>
-   <!--products-->
-
-   <section id="shopify-section-template--17951666864320__wave_section_JtArtC"
-      class="shopify-section featured-wave-section">
-      <div id="section-wave-template--17951666864320__wave_section_JtArtC"
-         class="wave-section wave-section--secondary wave-section--direction-bottom">
-         <style data-shopify="">
-            #section-wave-template--17951666864320__wave_section_JtArtC {
-
-               --color-background: 236, 232, 255;
+            <div class="row">
+                <p class="drinks-text">*These statements have not been evaluated by the Food and Drug Administration.
+                    This product is not intended to diagnose, treat, cure, or prevent any disease. </p>
+            </div> <!-- what's in it for you section -->
+        </div>
+    </div> <!-- Drinks --> <!--anytime-->
+    <div id="section-wave-template--17951666864320__wave_section_HHBeQJ"
+        class="wave-section wave-section--primary wave-section--direction-top">
+        <style data-shopify="">
+            #section-wave-template--17951666864320__wave_section_HHBeQJ {
+                --color-background: 255, 241, 191;
             }
-         </style>
-         <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="44" viewBox="0 0 1728 44" fill="none">
+        </style> <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="71" viewBox="0 0 1728 71" fill="none">
             <path
-               d="M39.344 44C270.944 44 271.484 17.8692 502.03 17.7511C732.581 17.8692 733.118 44 964.719 44C965.248 44 965.768 43.9978 966.292 43.9978C966.817 43.9978 967.336 44 967.866 44C1196.84 43.7594 1197.91 17.7489 1428.98 17.7489C1587.71 17.7489 1637.9 30.0235 1727.99 37.785L1728 0.0525003C1641 0.0525003 1587.71 0.0525003 1428.98 0.0525003C1197.91 0.0525003 1196.85 0.293202 967.873 0.0547547C967.343 0.0525671 966.824 0.0547547 966.299 0.0547547C965.775 0.0547547 965.255 0.0525003 964.725 0.0525003C733.125 0.0525003 732.59 -0.0656298 502.039 0.0525003C271.494 -0.0656298 262.444 0.0525003 30.844 0.0525003C16.9267 0.0525003 12.5 0.326006 0.156494 0.505389L0 43.7266C12.3435 43.9059 25.4267 44 39.344 44Z"
-               fill="#0AA03C"></path>
-         </svg>
-      </div>
-   </section>
-
-   <div class="long-banner">
-      <div class="container-fluid p-0">
-      </div>
-   </div>
-
-   <section id="shopify-section-template--17951666864320__wave_section_D7eMN7"
-      class="shopify-section featured-wave-section">
-      <div id="section-wave-template--17951666864320__wave_section_D7eMN7"
-         class="wave-section wave-section--primary wave-section--direction-top">
-         <style data-shopify="">
-            #section-wave-template--17951666864320__wave_section_D7eMN7 {
-
-               --color-background: 255, 241, 191;
+                d="M1728 71V37.5774C1633.13 42.5912 1518.87 46.0713 1361.23 46.1281C789.616 45.9236 788.289 0.689697 214.078 0.689697C212.764 0.689697 211.477 0.693484 210.176 0.693484C208.876 0.693484 207.588 0.689697 206.274 0.689697C130.864 0.7465 58.1377 1.59097 0 3.00725V71H1728Z"
+                fill="#fff"></path>
+        </svg>
+    </div> <!--video-->
+    <div class="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="section_heading featured-video-column_heading text-center">
+                    <div class="yomzBtn">How do people like YOMZ?</div>
+                    <h2 class="title inline-richtext h1 realText families"> Real Families. <span
+                            class="mobile-dblock">Real Talk.</span> </h2>
+                </div>
+            </div>
+            <div class="reviews-section">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="featured-review-columns-card">
+                            <div class="featured-review-columns-card__content">
+                                <div class="featured-review-columns-card__reviews"> <img src="images/red-star.png"
+                                        alt="redStar-img" class="icons-star"> </div>
+                                <div class="featured-review-columns-card__text">
+                                    <p>“My daughter thinks they’re candy. I know they’re full of nutrients. Win-win.”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="featured-review-columns-card__info">
+                                <div class="author-image-info">
+                                    <div class="author-image"> <img src="images/face-4.jpg" alt="face4-Img"
+                                            loading="lazy" class="author-image__image"> </div>
+                                    <div class="author-title_info">
+                                        <h3 class="author-title">Jessie M.</h3>
+                                        <div class="author-info">Mom of 2 picky eaters</div>
+                                    </div>
+                                </div>
+                                <div class="author-product-image"> <img src="images/red-gummy.png" alt="redGummy-img"
+                                        width="300" height="300" loading="lazy" class="author-product-image__image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="featured-review-columns-card">
+                            <div class="featured-review-columns-card__content">
+                                <div class="featured-review-columns-card__reviews"> <img src="images/red-star.png"
+                                        alt="redStar-img" class="icons-star"> </div>
+                                <div class="featured-review-columns-card__text">
+                                    <p>“I love them too. Way more fun than horse pills or greens powders and better for
+                                        me than cold pizza.” </p>
+                                </div>
+                            </div>
+                            <div class="featured-review-columns-card__info">
+                                <div class="author-image-info">
+                                    <div class="author-image"> <img src="images/face-5.jpg" alt="face5-Img"
+                                            loading="lazy" class="author-image__image"> </div>
+                                    <div class="author-title_info">
+                                        <h3 class="author-title">Marcus R.</h3>
+                                        <div class="author-info">Dad & late-night snacker</div>
+                                    </div>
+                                </div>
+                                <div class="author-product-image"> <img src="images/red-gummy.png" alt="redGummy-img"
+                                        width="300" height="300" loading="lazy" class="author-product-image__image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="featured-review-columns-card">
+                            <div class="featured-review-columns-card__content">
+                                <div class="featured-review-columns-card__reviews"> <img src="images/red-star.png"
+                                        alt="redStar-img" class="icons-star"> </div>
+                                <div class="featured-review-columns-card__text">
+                                    <p>“My son’s teacher asked what we changed—he’s more focused and less tired. It’s
+                                        these gummies.” </p>
+                                </div>
+                            </div>
+                            <div class="featured-review-columns-card__info">
+                                <div class="author-image-info">
+                                    <div class="author-image"> <img src="images/face-6.jpg" alt="face6-Img"
+                                            loading="lazy" class="author-image__image"> </div>
+                                    <div class="author-title_info">
+                                        <h3 class="author-title">Lena S.</h3>
+                                        <div class="author-info">Parent of a 6-year-old</div>
+                                    </div>
+                                </div>
+                                <div class="author-product-image"> <img src="images/red-gummy.png" alt="redGummy-img"
+                                        width="300" height="300" loading="lazy" class="author-product-image__image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--video--> <!--effect-->
+    <div class="anytime effect">
+        <div class="container">
+            <div class="row section_heading d-flex align-items-center">
+                <div class="col-md-6 p-0">
+                    <div class="anytime-data candyWith-Text text-left">
+                        <div class="alignCen"> <span class="yomzBtn yomzBtnUpdated">Why YOMZ Is the BOMBZ</span> </div>
+                        <h2 class="featured-product-detail__heading inline-richtext h1 text-left cabdy-text"> <span
+                                class="icon-whisker_text "> </span> Candy.<br> With Benefits. </h2>
+                        <p class="mt-2 mobile-cebnter">YOMZ is not just another gummy... <span class="d-block">It’s a
+                                <strong>game-changer.</strong></span> Each bite <strong>explodes</strong> with flavor
+                            and is <strong>packed</strong> with PhytoServ® and NatureKnit™, our
+                            <strong>powerhouse</strong> ingredient blends stacked with antioxidants, polyphenols, and
+                            phytonutrients. </p>
+                        <p class="mobile-cebnter">Translation? <span class="d-block">You get the nutrition of
+                                <strong>real</strong> fruits & veggies in the <strong>tastiest</strong> gummy on
+                                Earth.</span> <i>That’s the magic of YOMZ!</i> </p>
+                        <div class="yomz-btn"><a href="#try-yomz" class="btn">Try YOMZ <i class="fa fa-long-arrow-right"
+                                    aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0"> <img src="images/benefits.jpg" alt="benefits-img" class="img-fluid"> </div>
+            </div>
+        </div>
+    </div> <!--effect --> <!-- modern -->
+    <div class="modern official">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div class="section_heading featured-video-with-text_heading text-center zupplement-mb1">
+                        <div class="yomzBtn yomzBtnUpdated">YOMZ:</div>
+                        <h2 class="title inline-richtext zupplement"> Official Gummy Zupplement of <span
+                                class="underline">Like Nastya</span> </h2>
+                        <div class="text">
+                            <p><i>The world’s biggest kid YouTuber</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row modern-data">
+                <div class="col-md-12 text-center">
+                    <p>If there’s one thing Nastya knows, it’s how to make life <strong>fun.</strong></p>
+                    <p>And <strong>YOMZ</strong> fits right in!</p>
+                    <p>This superstar loves how <strong>yummy</strong> they taste, but that’s not all…</p>
+                    <p>It <strong>fuels</strong> her daily to help keep her <strong>strong</strong> and ready for every
+                        adventure. </p>
+                    <p>Whether she’s playing, learning, or having fun with friends and family…</p>
+                    <p>YOMZ is her go-to for a yummy <strong>boost.</strong></p>
+                    <p>Follow Nastya and make snack time great again!</p>
+                    <div class="yomz-btn"><a href="#" class="btn">Watch Nastya’s YOMZ Story <i
+                                class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- modern --> <!-- Doctor-Approved Goodness -->
+    <div class="doctor-approved">
+        <div class="container">
+            <div class="row">
+                <div class="section_heading featured-video-column_heading text-center">
+                    <div class="yomzBtn yomzBtnUpdated">YOMZ</div>
+                    <h2 class="title inline-richtext h1 realText doctor"> Doctor-Approved Goodness </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <div class="testi-qot">
+                        <p> <i class="fa fa-quote-left" aria-hidden="true"></i> “Wellness doesn’t have to be boring! Or
+                            taste awful. That’s why I support YOMZ. It’s crafted with clinically-backed ingredients from
+                            top nutrition experts. Perfect for families looking to bridge nutrition gaps. Plus it tastes
+                            great - you won’t believe your tongue!” </p>
+                        <p><strong>— Dr. I. Feelgood</strong> Duke-trained M.D.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <h3>YOMZ.</h3>
+                <p>Science-backed. Kid-loved. Doctor-approved. Parent-supported.<br> What’s not to love? </p>
+            </div>
+        </div>
+    </div> <!-- Doctor-Approved Goodness --> <!-- products -->
+    <section id="shopify-section-template--17951666864320__wave_section_xGqXdD"
+        class="shopify-section featured-wave-section">
+        <div id="section-wave-template--17951666864320__wave_section_xGqXdD"
+            class="wave-section wave-section--secondary wave-section--direction-top">
+            <style data-shopify="">
+                #section-wave-template--17951666864320__wave_section_xGqXdD {
+                    --color-background: 236, 232, 255;
+                }
+            </style> <svg style="transform:rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="1728" height="44"
+                viewBox="0 0 1728 44" fill="none">
+                <path
+                    d="M39.344 44C270.944 44 271.484 17.8692 502.03 17.7511C732.581 17.8692 733.118 44 964.719 44C965.248 44 965.768 43.9978 966.292 43.9978C966.817 43.9978 967.336 44 967.866 44C1196.84 43.7594 1197.91 17.7489 1428.98 17.7489C1587.71 17.7489 1637.9 30.0235 1727.99 37.785L1728 0.0525003C1641 0.0525003 1587.71 0.0525003 1428.98 0.0525003C1197.91 0.0525003 1196.85 0.293202 967.873 0.0547547C967.343 0.0525671 966.824 0.0547547 966.299 0.0547547C965.775 0.0547547 965.255 0.0525003 964.725 0.0525003C733.125 0.0525003 732.59 -0.0656298 502.039 0.0525003C271.494 -0.0656298 262.444 0.0525003 30.844 0.0525003C16.9267 0.0525003 12.5 0.326006 0.156494 0.505389L0 43.7266C12.3435 43.9059 25.4267 44 39.344 44Z"
+                    fill="#0AA03C"></path>
+            </svg>
+        </div>
+    </section>
+    <div class="modern products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div class="section_heading featured-video-with-text_heading text-center">
+                        <div class="yomzBtn yomzBtnUpdated">SHOP YOMZ</div>
+                        <h2 class="title h1 closes"> Closes Nutrition Gaps <span class="brbrack">without Breaking</span>
+                            <span class="underline underline-blue">the Bank</span> </h2>
+                        <div class="text">
+                            <p>YOMZ isn't just the tastiest gummy on Earth. It also adds much-needed essential vitamins
+                                and micronutrients to your daily routine. <br> That’s why we put together a special
+                                subscription deal for you. You get the lowest possible price on YOMZ Gummies so it's
+                                easier for you and your family to keep up your daily wellness routine. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="try-yomz" class="row justify-content-center">
+                <div class="col-md-4"> <!-- OG Gummies -->
+                    <div class="products-thumbs">
+                        <div class="featured-product-list-card-header">
+                            <h3 class="inline-richtext">OG GUMMIES</h3>
+                        </div> <img src="images/oggummies.jpg" alt="oggummies-Img" class="img-fluid">
+                        <div class="featured-product-list-card-info">
+                            <div class="featured-product-list-card-meta">
+                                <h4>SINGLE PACKS</h4>
+                            </div>
+                            <div class="featured-product-list-card-prices"><span
+                                    class="regular-price"><b>$49.00</b></span></div>
+                        </div>
+                        <div class="featured-product-list-card-info">
+                            <div class="featured-product-list-card-meta"><span class="unit">60 SERVINGS</span></div>
+                            <div class="featured-product-list-card-prices"><s class="compare-price"><b>$59.00</b></s>
+                            </div>
+                        </div>
+                        <div class="featured-product-list-card-footer">
+                            <div class="yomz-btn"> <a id="ogGummiesProduct" class="btn">Try YOMZ <i
+                                        class="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                            <div class="under_buttons"><span>1g SUGAR</span><span>CRUCIAL MICRONUTRIENTS</span></div>
+                        </div>
+                    </div>
+                </div> <!-- Yomz Sours -->
+                <div class="col-md-4">
+                    <div class="products-thumbs">
+                        <div class="featured-product-list-card-header">
+                            <h3 class="inline-richtext">YOMZ SOURS</h3>
+                        </div> <img src="images/yomzsours.jpg" alt="yomzsours-Img" class="img-fluid">
+                        <div class="featured-product-list-card-info">
+                            <div class="featured-product-list-card-meta">
+                                <h4>SINGLE PACKS</h4>
+                            </div>
+                            <div class="featured-product-list-card-prices"><span
+                                    class="regular-price"><b>$39.00</b></span></div>
+                        </div>
+                        <div class="featured-product-list-card-info">
+                            <div class="featured-product-list-card-meta"><span class="unit">30 SERVINGS</span></div>
+                            <div class="featured-product-list-card-prices"><s class="compare-price"><b>$49.00</b></s>
+                            </div>
+                        </div>
+                        <div class="featured-product-list-card-footer plo">
+                            <div class="yomz-btn"><a id="soursProduct" class="btn">Try YOMZ <i
+                                        class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                            <div class="under_buttons"><span>1g SUGAR</span><span>CRUCIAL MICRONUTRIENTS</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--products-->
+    <section id="shopify-section-template--17951666864320__wave_section_JtArtC"
+        class="shopify-section featured-wave-section">
+        <div id="section-wave-template--17951666864320__wave_section_JtArtC"
+            class="wave-section wave-section--secondary wave-section--direction-bottom">
+            <style data-shopify="">
+                #section-wave-template--17951666864320__wave_section_JtArtC {
+                    --color-background: 236, 232, 255;
+                }
+            </style> <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="44" viewBox="0 0 1728 44" fill="none">
+                <path
+                    d="M39.344 44C270.944 44 271.484 17.8692 502.03 17.7511C732.581 17.8692 733.118 44 964.719 44C965.248 44 965.768 43.9978 966.292 43.9978C966.817 43.9978 967.336 44 967.866 44C1196.84 43.7594 1197.91 17.7489 1428.98 17.7489C1587.71 17.7489 1637.9 30.0235 1727.99 37.785L1728 0.0525003C1641 0.0525003 1587.71 0.0525003 1428.98 0.0525003C1197.91 0.0525003 1196.85 0.293202 967.873 0.0547547C967.343 0.0525671 966.824 0.0547547 966.299 0.0547547C965.775 0.0547547 965.255 0.0525003 964.725 0.0525003C733.125 0.0525003 732.59 -0.0656298 502.039 0.0525003C271.494 -0.0656298 262.444 0.0525003 30.844 0.0525003C16.9267 0.0525003 12.5 0.326006 0.156494 0.505389L0 43.7266C12.3435 43.9059 25.4267 44 39.344 44Z"
+                    fill="#0AA03C"></path>
+            </svg>
+        </div>
+    </section>
+    <div class="long-banner">
+        <div class="container-fluid p-0"> </div>
+    </div>
+    <section id="shopify-section-template--17951666864320__wave_section_D7eMN7"
+        class="shopify-section featured-wave-section">
+        <div id="section-wave-template--17951666864320__wave_section_D7eMN7"
+            class="wave-section wave-section--primary wave-section--direction-top">
+            <style data-shopify="">
+                #section-wave-template--17951666864320__wave_section_D7eMN7 {
+                    --color-background: 255, 241, 191;
+                }
+            </style> <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="71" viewBox="0 0 1728 71" fill="none">
+                <path
+                    d="M1728 71V37.5774C1633.13 42.5912 1518.87 46.0713 1361.23 46.1281C789.616 45.9236 788.289 0.689697 214.078 0.689697C212.764 0.689697 211.477 0.693484 210.176 0.693484C208.876 0.693484 207.588 0.689697 206.274 0.689697C130.864 0.7465 58.1377 1.59097 0 3.00725V71H1728Z"
+                    fill="rgb(var(--color-background))"></path>
+            </svg>
+        </div>
+    </section> <!--long-Banner-->
+    <div id="section-wave-sections--17951665750208__wave_section_4dqGFB"
+        class="wave-section wave-section--primary wave-section--direction-top">
+        <style data-shopify="">
+            #section-wave-sections--17951665750208__wave_section_4dqGFB {
+                --color-background: 255 247 0;
             }
-         </style>
 
-         <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="71" viewBox="0 0 1728 71" fill="none">
+            #section-wave-sections--17951665750208__wave_section_4dqGFB svg {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        </style> <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="71" viewBox="0 0 1728 71" fill="none">
             <path
-               d="M1728 71V37.5774C1633.13 42.5912 1518.87 46.0713 1361.23 46.1281C789.616 45.9236 788.289 0.689697 214.078 0.689697C212.764 0.689697 211.477 0.693484 210.176 0.693484C208.876 0.693484 207.588 0.689697 206.274 0.689697C130.864 0.7465 58.1377 1.59097 0 3.00725V71H1728Z"
-               fill="rgb(var(--color-background))"></path>
-         </svg>
-
-      </div>
-
-   </section>
-   <!--long-Banner-->
-
-   <div id="section-wave-sections--17951665750208__wave_section_4dqGFB"
-      class="wave-section wave-section--primary wave-section--direction-top">
-      <style data-shopify="">
-         #section-wave-sections--17951665750208__wave_section_4dqGFB {
-            --color-background: 255 247 0;
-         }
-
-         #section-wave-sections--17951665750208__wave_section_4dqGFB svg {
-            width: 100%;
-            height: auto;
-            display: block;
-         }
-      </style>
-      <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="71" viewBox="0 0 1728 71" fill="none">
-         <path
-            d="M1728 71V37.5774C1633.13 42.5912 1518.87 46.0713 1361.23 46.1281C789.616 45.9236 788.289 0.689697 214.078 0.689697C212.764 0.689697 211.477 0.693484 210.176 0.693484C208.876 0.693484 207.588 0.689697 206.274 0.689697C130.864 0.7465 58.1377 1.59097 0 3.00725V71H1728Z"
-            fill="#FFEB00"></path>
-      </svg>
-   </div>
-
-   <div class="subscribe">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6 mx-auto">
-               <div class="section_heading featured-video-column_heading text-center">
-                  <div class="subscribe-form">
-                     <form class="row g-3">
-
-                        <!-- Email Address Input -->
-                        <div class="col-md-8">
-                           <input type="email" class="form-control" id="emailAddress" placeholder="Your Email Address">
-                           <div data-lastpass-icon-root=""
-                              style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
-                           </div>
+                d="M1728 71V37.5774C1633.13 42.5912 1518.87 46.0713 1361.23 46.1281C789.616 45.9236 788.289 0.689697 214.078 0.689697C212.764 0.689697 211.477 0.693484 210.176 0.693484C208.876 0.693484 207.588 0.689697 206.274 0.689697C130.864 0.7465 58.1377 1.59097 0 3.00725V71H1728Z"
+                fill="#FFEB00"></path>
+        </svg>
+    </div>
+    <div class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="section_heading featured-video-column_heading text-center">
+                        <div class="subscribe-form">
+                            <form class="row g-3"> <!-- Email Address Input -->
+                                <div class="col-md-8"> <input type="email" class="form-control" id="emailAddress"
+                                        placeholder="Your Email Address">
+                                    <div data-lastpass-icon-root=""
+                                        style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="col-md-4"> <button type="submit"
+                                        class="btn btn-primary mb-3 upColor">SUBSCRIBE</button> </div>
+                            </form>
+                            <p>Get our fun emails packed with tips, product updates, special offers, and ore straight to
+                                your box. </p>
                         </div>
-                        <div class="col-md-4">
-                           <button type="submit" class="btn btn-primary mb-3 upColor">SUBSCRIBE</button>
-                        </div>
-                     </form>
-                     <p>Get our fun emails packed with tips, product updates, special offers,
-                        and more straight to your box.</p>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-
-   <div class="marquee_section">
-      <div class="marquee">
-         <div class="marquee_track">
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
+        </div>
+    </div>
+    <div class="marquee_section">
+        <div class="marquee">
+            <div class="marquee_track">
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
+                <div class="marquee_track-hold">
+                    <h3 class="marquee_text">1g SUGAR</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Science-backed</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Kid-loved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Doctor-approved</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                    <h3 class="marquee_text">Parent-supported</h3>
+                    <div class="marquee_code"> <img src="images/o.png" alt="teddy-small-logo"> </div>
+                </div>
             </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="company-info"> <a id="yomzLogo"> <img src="images/logo.png" alt="logo-img"
+                                class="img-fluid"> </a>
+                        <p>We're on a mission to smash "hidden hunger" by closing the nutrition gaps and helping improve
+                            the health of 10 million families by 2027. </p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <h2 class="footer-block__heading inline-richtext">Shop</h2>
+                    <ul class="footer-block__details-content list-unstyled">
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Shop All</a></li>
+                        <li><a href="https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/"
+                                class="link link--text list-menu__item list-menu__item--link">Buy OG Gummies</a></li>
+                        <li><a href="https://suretekinfosoft.com/demo106/products/yomz-sours/"
+                                class="link link--text list-menu__item list-menu__item--link">Buy YOMZ Sours</a></li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Our Story</a></li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Manage Account</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <h2 class="footer-block__heading inline-richtext">Company</h2>
+                    <ul class="footer-block__details-content list-unstyled">
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Contact Us</a>
+                        </li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Lab Reports</a>
+                        </li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Affiliates</a>
+                        </li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Terms of
+                                Service</a> </li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Privacy Policy</a>
+                        </li>
+                        <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Returns &amp;
+                                Refunds</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h2 class="footer-block__heading inline-richtext">JOIN US</h2>
+                    <div class="company-info">
+                        <p>Enter your email below to get timely wellness tips, updates on new products, chances to get
+                            free stuff, and more. Anything that's good fun and yum. </p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form class="row g-3">
+                            <div class="col-7 p-0"> <input type="email" class="form-control" id="inputPassword2"
+                                    placeholder="Your Email Address">
+                                <div data-lastpass-icon-root=""
+                                    style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                </div>
+                            </div>
+                            <div class="col-5 p-0"> <button type="submit"
+                                    class="btn btn-primary mb-3">SUBSCRIBE</button> </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
+            <div class="row d-flex align-items-center footer__copyright-gap">
+                <div class="col-md-6">
+                    <div class="footer__copyright">Copyright © 2025 YOMZ - All Rights Reserved</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><img src="images/facebook.png" alt="logo-facebook"></a></li>
+                            <li><a href="#"><img src="images/instagram.png" alt="logo-instagram"></a></li>
+                            <li><a href="#"><img src="images/tik-tok.png" alt="logo-tik-tok"></a></li>
+                            <li><a href="#"><img src="images/pinterest.png" alt="logo-pinterest"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-            <div class="marquee_track-hold">
-               <h3 class="marquee_text">1g SUGAR</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Science-backed</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Kid-loved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Doctor-approved</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-               <h3 class="marquee_text">Parent-supported</h3>
-               <div class="marquee_code">
-                  <img src="images/o.png">
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <footer>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="company-info">
-                  <a id="yomzLogo">
-                     <img src="images/logo.png" class="img-fluid">
-                  </a>
-                  <p>We're on a mission to smash "hidden hunger" by closing the nutrition gaps and helping improve the
-                     health of 10 million families by 2027.</p>
-               </div>
-            </div>
-            <div class="col-md-2 col-6 mb-3">
-               <h2 class="footer-block__heading inline-richtext">Shop</h2>
-               <ul class="footer-block__details-content list-unstyled">
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Shop All</a></li>
-                  <li><a href="https://suretekinfosoft.com/demo106/products/yomz-OG-gummies/"
-                        class="link link--text list-menu__item list-menu__item--link">Buy OG Gummies</a></li>
-                  <li><a href="https://suretekinfosoft.com/demo106/products/yomz-sours/"
-                        class="link link--text list-menu__item list-menu__item--link">Buy YOMZ Sours</a></li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Our Story</a></li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Manage Account</a></li>
-               </ul>
-            </div>
-            <div class="col-md-2 col-6 mb-3">
-               <h2 class="footer-block__heading inline-richtext">Company</h2>
-               <ul class="footer-block__details-content list-unstyled">
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Contact Us</a></li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Lab Reports</a></li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Affiliates</a></li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Terms of Service</a>
-                  </li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Privacy Policy</a></li>
-                  <li><a href="#" class="link link--text list-menu__item list-menu__item--link">Returns &amp;
-                        Refunds</a></li>
-               </ul>
-            </div>
-            <div class="col-md-4 col-12">
-               <h2 class="footer-block__heading inline-richtext">JOIN US</h2>
-               <div class="company-info">
-                  <p>Enter your email below to get timely wellness tips, updates on new products,
-                     chances to get free stuff, and more. Anything that's good fun and yum.
-                  </p>
-               </div>
-               <div class="subscribe-form">
-                  <form class="row g-3">
-                     <div class="col-7 p-0">
-                        <input type="email" class="form-control" id="inputPassword2" placeholder="Your Email Address">
-                        <div data-lastpass-icon-root=""
-                           style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
-                        </div>
-                     </div>
-                     <div class="col-5 p-0">
-                        <button type="submit" class="btn btn-primary mb-3">SUBSCRIBE</button>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-         <div class="row d-flex align-items-center footer__copyright-gap">
-            <div class="col-md-6">
-               <div class="footer__copyright">Copyright © 2025 YOMZ - All Rights Reserved</div>
-            </div>
-            <div class="col-md-6">
-               <div class="social-icons">
-                  <ul>
-                     <li><a href="#"><img src="images/facebook.png"></a></li>
-                     <li><a href="#"><img src="images/instagram.png"></a></li>
-                     <li><a href="#"><img src="images/tik-tok.png"></a></li>
-                     <li><a href="#"><img src="images/pinterest.png"></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
-
-   <!-- Import Script -->
-   <script src="./Script/index.js"></script>
-
+        </div>
+    </footer> <!-- Import Script -->
+    <script src="./Script/index.js"></script>
 </body>
 
 </html>
