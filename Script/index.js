@@ -56,6 +56,7 @@ const timerline = document.getElementById('timerline')
 // Email Address Save in Local Storage
 const form = document.querySelector("form");
 const emailInput = document.getElementById('emailAddress');
+const emailInputtName = document.getElementById("emailAddress").getAttribute("name");
 
 form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form from submitting normally
@@ -75,10 +76,9 @@ form.addEventListener("submit", function (event) {
 });
 
 // API call to update the email addres in "excel sheet"
-const url = 'https://yomz-pages-data.vercel.app/api/hello';
-// const url = 'http://localhost:3000/api/hello';
+const url = 'https://yomz-pages-data.vercel.app/api/data';
 const saveEmail = async (email) => {
-    const response = await fetch(`${url}?email=${email}`, {
+    const response = await fetch(`${url}?email=${email}&sheetName=${emailInputtName}`, {
         method: 'GET'
     }).then(res => res.json());
 

@@ -9,9 +9,8 @@
 
 @font-face {
   font-family: 'Century Gothic';
-  src: url('CenturyGothic-Bold.woff2') format('woff2'),
-    url('CenturyGothic-Bold.woff') format('woff');
-  font-weight: bold;
+  src: url('../font/CenturyGothic-Bold.woff2') format('woff2'),
+    url('../font/CenturyGothic-Bold.woff') format('woff');
   font-style: normal;
   font-display: swap;
 }
@@ -94,6 +93,13 @@ ul {
   font-style: normal;
 
   font-size: 18px;
+}
+
+b,
+strong {
+  font-weight: bolder;
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px black;
 }
 
 .hide {
