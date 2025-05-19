@@ -76,9 +76,10 @@ form.addEventListener("submit", function (event) {
 });
 
 // API call to update the email addres in "excel sheet"
-const url = 'https://yomz-pages-data.vercel.app/api/data';
+// const url = 'https://yomz-pages-data.vercel.app/api/data';
+const url = 'http://localhost:3000/api/data';
 const saveEmail = async (email) => {
-    const response = await fetch(`${url}?email=${email}&sheetName=${emailInputtName}`, {
+    const response = await fetch(`${url}?email=${email}&sheetName=${emailInputtName}&column=!B5:C5`, {
         method: 'GET'
     }).then(res => res.json());
 
